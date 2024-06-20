@@ -2,11 +2,178 @@
 	"info": {
 		"_postman_id": "65cdf3be-71d6-471b-8da1-996b61c82c64",
 		"name": "MFCS_API",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "25051645",
 		"_collection_link": "https://blue-moon-84997.postman.co/workspace/MFCS_API-TESTING~482e1e9b-5fb2-41b5-bcc5-bf784d679f27/collection/25051645-65cdf3be-71d6-471b-8da1-996b61c82c64?action=share&source=collection_link&creator=25051645"
 	},
 	"item": [
+		{
+			"name": "Generate_Token",
+			"item": [
+				{
+					"name": "Access_Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"check the status code is 200\", function(){\r",
+									"    pm.response.to.have.status(200)\r",
+									"})\r",
+									"\r",
+									"let jsonData = pm.response.json()\r",
+									"\r",
+									"if (jsonData.access_token) {\r",
+									"    console.log(jsonData.access_token);\r",
+									"    let Access = jsonData.access_token;\r",
+									"    console.log(Access);\r",
+									"    pm.environment.set(\"Access_Token\", Access);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "webapp",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.157.121.99:8080/realms/mfcs-app/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"10",
+								"157",
+								"121",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"realms",
+								"mfcs-app",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bearer_Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"check the status code is 200\", function(){\r",
+									"    pm.response.to.have.status(200)\r",
+									"})\r",
+									"\r",
+									"let jsonData = pm.response.json()\r",
+									"\r",
+									"if (jsonData.access_token) {\r",
+									"    console.log(jsonData.access_token);\r",
+									"    let bearer = jsonData.access_token;\r",
+									"    console.log(bearer);\r",
+									"    pm.environment.set(\"bearer_token\", bearer);\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Access_Token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer %access_token%"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "urn:ietf:params:oauth:grant-type:uma-ticket",
+									"type": "text"
+								},
+								{
+									"key": "audience",
+									"value": "configuration-api",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.157.121.99:8080/realms/mfcs-app/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"10",
+								"157",
+								"121",
+								"99"
+							],
+							"port": "8080",
+							"path": [
+								"realms",
+								"mfcs-app",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
 		{
 			"name": "SITE_API",
 			"item": [
@@ -77,7 +244,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -135,7 +311,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -209,7 +394,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -258,7 +452,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -307,7 +510,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -358,7 +570,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -398,7 +619,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -438,7 +668,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -478,7 +717,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Site/{{siteId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/{{siteId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"{{siteId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -508,7 +757,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Site/38033268-fa1d-47c8-a557-a9504462dd9"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/38033268-fa1d-47c8-a557-a9504462dd9",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"38033268-fa1d-47c8-a557-a9504462dd9"
+							]
+						}
 					},
 					"response": []
 				},
@@ -550,7 +809,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Site/38033268-fa1d-47c8-a557-a9504462dd92"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/38033268-fa1d-47c8-a557-a9504462dd92",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"38033268-fa1d-47c8-a557-a9504462dd92"
+							]
+						}
 					},
 					"response": []
 				},
@@ -603,7 +872,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Site/{{siteId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/{{siteId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"{{siteId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -643,7 +922,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Site/af7cce72-c32d-4798-828c-f594525a771"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/af7cce72-c32d-4798-828c-f594525a771",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"af7cce72-c32d-4798-828c-f594525a771"
+							]
+						}
 					},
 					"response": []
 				},
@@ -696,7 +985,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Site/{{siteId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/{{siteId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"{{siteId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -736,7 +1035,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Site/{{siteId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/{{siteId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"{{siteId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -765,7 +1074,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Site/{{siteId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/{{siteId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"{{siteId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -805,7 +1124,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Site/af7cce72-c32d-4798-828c-f594525a7715"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/af7cce72-c32d-4798-828c-f594525a7715",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"af7cce72-c32d-4798-828c-f594525a7715"
+							]
+						}
 					},
 					"response": []
 				},
@@ -834,7 +1163,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Site/{{siteId1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/{{siteId1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"{{siteId1}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -864,7 +1203,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Site/70102551-aa52-4378-9429-8731fb9e179"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/70102551-aa52-4378-9429-8731fb9e179",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"70102551-aa52-4378-9429-8731fb9e179"
+							]
+						}
 					},
 					"response": []
 				},
@@ -903,7 +1252,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Site/{{siteId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/{{siteId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"{{siteId}}"
+							]
+						}
 					},
 					"response": []
 				}
@@ -961,7 +1320,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1043,7 +1411,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1108,14 +1485,23 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"{{Area_name2}}\",\r\n  \"siteId\": \"{{site_Id}}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"{{Area_name2}}\",\r\n  \"description\": \"\",\r\n  \"siteId\": \"{{site_Id}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1157,14 +1543,23 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"{{Area_name2}}\",\r\n  \"siteId\": \"{{site_Id}}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"{{Area_name2}}\",\r\n  \"description\": \"Testing\",\r\n  \"siteId\": \"{{site_Id}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1213,7 +1608,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1262,7 +1666,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1332,7 +1745,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1396,7 +1818,79 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create area  with wrong siteid(-)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Test if status code is 400\r",
+									"pm.test(\"Status code is 500\", function () {\r",
+									"    pm.response.to.have.status(500);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var responseBody = pm.response.json();\r",
+									"\r",
+									"\r",
+									"pm.test(\"Check error message\", function() {\r",
+									"    pm.expect(responseBody.Message).to.be.eql(\"Internal Server Error.\")\r",
+									"})\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"testunit\",\r\n  \"description\": \"test\",\r\n  \"siteId\": \"7000e682-5045-43c0-ab92-e9d17c47603d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1446,7 +1940,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1486,7 +1989,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1547,7 +2059,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1607,7 +2128,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area/{{AreaId1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/{{AreaId1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"{{AreaId1}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1643,7 +2174,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Area/bdef4ac4-651e-47e9-92f4-7fb2c3a98f1"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/bdef4ac4-651e-47e9-92f4-7fb2c3a98f1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"bdef4ac4-651e-47e9-92f4-7fb2c3a98f1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1673,7 +2214,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Area/38033268-fa1d-47c8-a557-a9504462dd92"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/38033268-fa1d-47c8-a557-a9504462dd92",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"38033268-fa1d-47c8-a557-a9504462dd92"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1724,7 +2275,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area/{{AreaId1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/{{AreaId1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"{{AreaId1}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1775,7 +2336,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area/{{AreaId1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/{{AreaId1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"{{AreaId1}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1813,7 +2384,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area/f5016185-176a-4ef9-ab4a-6d1bc742a75a"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/f5016185-176a-4ef9-ab4a-6d1bc742a75a",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"f5016185-176a-4ef9-ab4a-6d1bc742a75a"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1852,7 +2433,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area/{{site_Id}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/{{site_Id}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"{{site_Id}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1881,7 +2472,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Area/{{AreaId1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/{{AreaId1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"{{AreaId1}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1910,7 +2511,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Area/{{AreaId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/{{AreaId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"{{AreaId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -1940,7 +2551,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Area/70102551-aa52-4378-9429-8731fb9e179"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/70102551-aa52-4378-9429-8731fb9e179",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"70102551-aa52-4378-9429-8731fb9e179"
+							]
+						}
 					},
 					"response": []
 				}
@@ -2001,7 +2622,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2052,7 +2682,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2130,7 +2769,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2224,7 +2872,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2263,7 +2920,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2302,7 +2968,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2356,7 +3031,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2413,7 +3097,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2453,7 +3146,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2493,7 +3195,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2554,7 +3265,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2603,7 +3323,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Unit/{{unitId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"{{unitId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2633,7 +3363,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Unit/c6ab95d1-e488-41ec-9816-0ec16b2970f"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/c6ab95d1-e488-41ec-9816-0ec16b2970f",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"c6ab95d1-e488-41ec-9816-0ec16b2970f"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2663,7 +3403,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Unit/c6ab95d1-e488-41ec-9816-0ec16b2970d4"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/c6ab95d1-e488-41ec-9816-0ec16b2970d4",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"c6ab95d1-e488-41ec-9816-0ec16b2970d4"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2713,45 +3463,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit/{{unitId}}"
-					},
-					"response": []
-				},
-				{
-					"name": "Update Unit non-existing unitID -ve",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Status code is 404\", function () {\r",
-									"    pm.response.to.have.status(404);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"check the error\", function(){\r",
-									"    pm.expect(jsonData.title).to.eql(\"Not Found\")\r",
-									"})"
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"{{unitId}}"
+							]
 						}
-					],
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"update api\",\r\n  \"description\": \"Testing\",\r\n  \"areaId\": \"{{areaId}}\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{baseURL}}/api/Unit/bca7c92b-d0ad-4f4a-34ee-ace433f756f8"
 					},
 					"response": []
 				},
@@ -2791,7 +3513,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit/aca7c92b-d0ad-4f4a-84ee-ace433f756"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/aca7c92b-d0ad-4f4a-84ee-ace433f756",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"aca7c92b-d0ad-4f4a-84ee-ace433f756"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2841,7 +3573,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit/{{unitId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"{{unitId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2880,7 +3622,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit/{{unitId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"{{unitId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2909,7 +3661,65 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Unit/{{unitId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"{{unitId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Unit non-existing unitID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"check the error\", function(){\r",
+									"    pm.expect(jsonData.title).to.eql(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"update api\",\r\n  \"description\": \"Testing\",\r\n  \"areaId\": \"{{areaId}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"{{unitId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2938,7 +3748,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Unit/{{unitId1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/{{unitId1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"{{unitId1}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -2968,7 +3788,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Unit/70102551-aa52-4378-9429-8731fb9e179"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/70102551-aa52-4378-9429-8731fb9e179",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"70102551-aa52-4378-9429-8731fb9e179"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3007,7 +3837,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit/{{unitId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"{{unitId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3030,7 +3870,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Area/{{areaId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/{{areaId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"{{areaId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3059,7 +3909,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Site/{{siteId1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/{{siteId1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"{{siteId1}}"
+							]
+						}
 					},
 					"response": []
 				}
@@ -3164,8 +4024,8 @@
 								},
 								{
 									"key": "AssetIconFile",
-									"value": "",
-									"type": "text"
+									"type": "file",
+									"src": "/C:/Users/47700281/Documents/Panchami/wallpapers/solar system.jpg"
 								},
 								{
 									"key": "ParamsFile",
@@ -3179,7 +4039,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3261,7 +4130,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3376,7 +4254,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3460,7 +4347,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3544,7 +4440,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3628,7 +4533,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3712,7 +4626,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3796,7 +4719,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3885,7 +4817,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -3962,7 +4903,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4036,7 +4986,102 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Asset Type wrong assetIcon File type -ve",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Generate a random first name\r",
+									"var firstName = Math.random().toString(36).substring(7);\r",
+									"pm.environment.set(\"AssetTypeName\", firstName);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 406\", function () {\r",
+									"    pm.response.to.have.status(406);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									" \r",
+									"pm.test(\"check the status title\", function(){\r",
+									"    pm.expect(jsonData.title).to.be.eql(\"Not Acceptable\")\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Name",
+									"value": "test_110",
+									"type": "text"
+								},
+								{
+									"key": "Description",
+									"value": "Testing__1",
+									"type": "text"
+								},
+								{
+									"key": "AssetCategory",
+									"value": "testassetcategory_1",
+									"type": "text"
+								},
+								{
+									"key": "AssetIconFile",
+									"type": "file",
+									"src": "/C:/Users/47700281/Desktop/MFCS/RunsResults.docx"
+								},
+								{
+									"key": "ParamsFile",
+									"type": "file",
+									"src": "/C:/Users/47700281/Downloads/parameters.json"
+								},
+								{
+									"key": "Parameters",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4096,7 +5141,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"{{AssetTypeID}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4132,7 +5187,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/AssetType/c47434ae-1a9b-4711-97cb-ff78362f71a"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/c47434ae-1a9b-4711-97cb-ff78362f71a",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"c47434ae-1a9b-4711-97cb-ff78362f71a"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4168,7 +5233,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/AssetType/c48434ae-1a9b-4711-97cb-ff78362f71a1"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/c48434ae-1a9b-4711-97cb-ff78362f71a1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"c48434ae-1a9b-4711-97cb-ff78362f71a1"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4196,7 +5271,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"verify the value of name\", function(){\r",
-									"    pm.expect(jsonData.name).to.eql(\"Test_asset-Updated\")\r",
+									"    pm.expect(jsonData.name).to.eql(\"Asset-Type-Update\")\r",
 									"})\r",
 									"\r",
 									"pm.test(\"Verify if Description is available\", function(){\r",
@@ -4226,7 +5301,26 @@
 									"    pm.expect(jsonData).to.have.property('assetIcon');\r",
 									"    pm.expect(jsonData.name).not.to.be.null;\r",
 									"});\r",
+									"\r",
+									"if (jsonData.name) {\r",
+									"    console.log(jsonData.name);\r",
+									"    let Name = jsonData.name;\r",
+									"    console.log(Name);\r",
+									"    pm.environment.set(\"AssetTypeNameUpdate\", Name);\r",
+									"}\r",
+									"\r",
 									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// var firstName = Math.random().toString(36).substring(7);\r",
+									"// pm.environment.set(\"UpdatedName\", firstName);"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -4241,7 +5335,7 @@
 							"formdata": [
 								{
 									"key": "Name",
-									"value": "Test_asset-Updated",
+									"value": "Asset-Type-Update",
 									"type": "text"
 								},
 								{
@@ -4256,8 +5350,8 @@
 								},
 								{
 									"key": "AssetIconFile",
-									"value": "",
-									"type": "text"
+									"type": "file",
+									"src": "/C:/Users/47700281/Desktop/MFCS/AssetIcon1.png"
 								},
 								{
 									"key": "ParamsFile",
@@ -4271,7 +5365,17 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"{{AssetTypeID}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4299,7 +5403,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"verify the value of name\", function(){\r",
-									"    pm.expect(jsonData.name).to.eql(\"Test_asset-Updated\")\r",
+									"    pm.expect(jsonData.name).to.eql(\"Asset-Type-Update\")\r",
 									"})\r",
 									"\r",
 									"pm.test(\"Verify if Description is available\", function(){\r",
@@ -4344,7 +5448,7 @@
 							"formdata": [
 								{
 									"key": "Name",
-									"value": "Test_asset-Updated",
+									"value": "Asset-Type-Update",
 									"type": "text"
 								},
 								{
@@ -4374,7 +5478,17 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"{{AssetTypeID}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4440,7 +5554,17 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType/33e5414b-593c-481f-be41-94cf4d4253d"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/33e5414b-593c-481f-be41-94cf4d4253d",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"33e5414b-593c-481f-be41-94cf4d4253d"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4469,71 +5593,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID}}"
-					},
-					"response": []
-				},
-				{
-					"name": "Update Asset Type Non-existing asset Type ID -ve",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Status code is 404\", function () {\r",
-									"    pm.response.to.have.status(404);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"check the error\", function(){\r",
-									"    pm.expect(jsonData.title).to.eql(\"Not Found\")\r",
-									"})"
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "Name",
-									"value": "Test_asset-Updated",
-									"type": "text"
-								},
-								{
-									"key": "Description",
-									"value": "Testing",
-									"type": "text"
-								},
-								{
-									"key": "AssetCategory",
-									"value": "A_06-2024",
-									"type": "text"
-								},
-								{
-									"key": "AssetIconFile",
-									"value": "",
-									"type": "text"
-								},
-								{
-									"key": "ParamsFile",
-									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
-								},
-								{
-									"key": "Parameters",
-									"value": "",
-									"type": "text"
-								}
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"{{AssetTypeID}}"
 							]
-						},
-						"url": "{{baseURL}}/api/AssetType/3ce34e2a-42e7-40db-a7a9-848d7edb587f"
+						}
 					},
 					"response": []
 				},
@@ -4562,7 +5632,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"{{AssetTypeID}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4593,7 +5673,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/AssetType/33e5414b-593c-481f-be41-94cf4d5253f"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/33e5414b-593c-481f-be41-94cf4d5253f",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"33e5414b-593c-481f-be41-94cf4d5253f"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4622,7 +5712,102 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"{{AssetTypeID1}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Asset Type Non-existing asset Type ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"check the error\", function(){\r",
+									"    pm.expect(jsonData.title).to.eql(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var firstName = Math.random().toString(36).substring(7);\r",
+									"pm.environment.set(\"UpdatedName\", firstName);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Name",
+									"value": "{{UpdatedName}}",
+									"type": "text"
+								},
+								{
+									"key": "Description",
+									"value": "Testing",
+									"type": "text"
+								},
+								{
+									"key": "AssetCategory",
+									"value": "A_06-2024",
+									"type": "text"
+								},
+								{
+									"key": "AssetIconFile",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "ParamsFile",
+									"type": "file",
+									"src": "/C:/Users/47700281/Downloads/parameters.json"
+								},
+								{
+									"key": "Parameters",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/{{NonExistingID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"{{NonExistingID}}"
+							]
+						}
 					},
 					"response": []
 				}
@@ -4683,7 +5868,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/SIte"
+						"url": {
+							"raw": "{{baseURL}}/api/SIte",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"SIte"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4734,7 +5928,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Area"
+						"url": {
+							"raw": "{{baseURL}}/api/Area",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4789,7 +5992,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Unit"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4869,7 +6081,16 @@
 								}
 							]
 						},
-						"url": "{{baseURL}}/api/AssetType"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType"
+							]
+						}
 					},
 					"response": []
 				},
@@ -4964,7 +6185,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5016,7 +6246,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5069,7 +6308,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5122,7 +6370,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5174,7 +6431,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5197,17 +6463,15 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"// pm.test(\"Status code is 400\", function () {\r",
-									"//     pm.response.to.have.status(400);\r",
-									"// });\r",
+									"pm.test(\"Status code is 500\", function () {\r",
+									"    pm.response.to.have.status(500);\r",
+									"});\r",
 									"\r",
-									"// var responseBody = pm.response.json();\r",
-									"// var errorMessage = responseBody.errors.Description[0];\r",
+									"var responseBody = pm.response.json();\r",
 									"\r",
-									"// // pm.test(\"Check if error message is as expected\", function() {\r",
-									"// //     pm.expect(errorMessage).to.eql(\"The field Description must be a string or array type with a maximum length of '300'.\");\r",
-									"// // });\r",
-									""
+									"pm.test(\"Verify the message displayed\", function(){\r",
+									"    pm.expect(responseBody.Message).to.be.eql(\"Internal Server Error.\")\r",
+									"})"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -5226,7 +6490,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5249,17 +6522,15 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"// pm.test(\"Status code is 400\", function () {\r",
-									"//     pm.response.to.have.status(400);\r",
-									"// });\r",
+									"pm.test(\"Status code is 500\", function () {\r",
+									"    pm.response.to.have.status(500);\r",
+									"});\r",
 									"\r",
-									"// var responseBody = pm.response.json();\r",
-									"// var errorMessage = responseBody.errors.Description[0];\r",
+									"var responseBody = pm.response.json();\r",
 									"\r",
-									"// pm.test(\"Check if error message is as expected\", function() {\r",
-									"//     pm.expect(errorMessage).to.eql(\"The field Description must be a string or array type with a maximum length of '300'.\");\r",
-									"// });\r",
-									""
+									"pm.test(\"Verify the message displayed\", function(){\r",
+									"    pm.expect(responseBody.Message).to.be.eql(\"Internal Server Error.\")\r",
+									"})"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -5278,7 +6549,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5369,7 +6649,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5421,7 +6710,16 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5495,7 +6793,16 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Asset"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5555,7 +6862,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Asset/{{assetID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"{{assetID}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5585,7 +6902,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Asset/59492112-00ca-411f-aed0-de355722a4e"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/59492112-00ca-411f-aed0-de355722a4e",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"59492112-00ca-411f-aed0-de355722a4e"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5614,7 +6941,17 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{baseURL}}/api/Asset/59492112-00ca-411f-aed0-de355722a3e7"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/59492112-00ca-411f-aed0-de355722a3e7",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"59492112-00ca-411f-aed0-de355722a3e7"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5664,7 +7001,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset/{{assetID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"{{assetID}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5714,7 +7061,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset/{{assetID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"{{assetID}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5754,7 +7111,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset/{{assetID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"{{assetID}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5794,7 +7161,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset/39a6401b-1ffd-4f5a-a7aa-44539d8584b"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/39a6401b-1ffd-4f5a-a7aa-44539d8584b",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"39a6401b-1ffd-4f5a-a7aa-44539d8584b"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5823,7 +7200,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Asset/{{assetID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"{{assetID}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5853,7 +7240,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Asset/25a5de11-df62-4215-b32d-d73eca61b23"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/25a5de11-df62-4215-b32d-d73eca61b23",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"25a5de11-df62-4215-b32d-d73eca61b23"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5892,7 +7289,17 @@
 								}
 							}
 						},
-						"url": "{{baseURL}}/api/Asset/{{assetID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/244bd97d-9361-4b7d-8b7f-9b164209fe88",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"244bd97d-9361-4b7d-8b7f-9b164209fe88"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5921,7 +7328,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Asset/{{assetID}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"{{assetID}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5950,7 +7367,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Asset/{{assetID1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Asset/{{assetID1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Asset",
+								"{{assetID1}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -5979,7 +7406,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"AssetType",
+								"{{AssetTypeID1}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -6008,7 +7445,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Unit/{{unitId1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Unit/{{unitId1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Unit",
+								"{{unitId1}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -6031,7 +7478,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Area/{{areaId}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Area/{{areaId}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Area",
+								"{{areaId}}"
+							]
+						}
 					},
 					"response": []
 				},
@@ -6060,7 +7517,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{baseURL}}/api/Site/{{siteId1}}"
+						"url": {
+							"raw": "{{baseURL}}/api/Site/{{siteId1}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"Site",
+								"{{siteId1}}"
+							]
+						}
 					},
 					"response": []
 				}
@@ -6069,9 +7536,13 @@
 	],
 	"auth": {
 		"type": "bearer",
-		"bearer": {
-			"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJOQ09xYVY2LWE5TmI1RmxKNzdjM3lDM1BxRVA2M1p3ZWRySHkwQVFkdmdJIn0.eyJleHAiOjE3MTg2NDEyNDAsImlhdCI6MTcxODY0MDk0MCwianRpIjoiZmJmNmU5NjMtMDk0Yy00OTI1LTljMjctNzFkMTYyNThiY2Y3IiwiaXNzIjoiaHR0cDovLzEwLjE1Ny4xMjEuOTk6ODA4MC9yZWFsbXMvbWZjcy1hcHAiLCJhdWQiOiJjb25maWd1cmF0aW9uLWFwaSIsInN1YiI6IjYyODI2NzA3LThjODYtNDFiZi1hMzk4LWJmYjU4NDAzZmE2ZiIsInR5cCI6IkJlYXJlciIsImF6cCI6IndlYmFwcCIsInNlc3Npb25fc3RhdGUiOiJmN2E0NjRmNS0wN2RiLTQxNzItYWYyOS01NTFiMmRmZTJiMDEiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6NTAwMCIsIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtbWZjcy1hcHAiLCJPcGVyYXRpb24gVXNlciIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJhdXRob3JpemF0aW9uIjp7InBlcm1pc3Npb25zIjpbeyJzY29wZXMiOlsicmVhZCIsInVwZGF0ZSIsImNyZWF0ZSIsImxpc3QiLCJkZWxldGUiXSwicnNpZCI6ImMzNDk3NTcwLTI3M2UtNDg1Ni1iODI0LWVhYmIzYjYyMGJkMyIsInJzbmFtZSI6InNpdGUifSx7InNjb3BlcyI6WyJyZWFkIiwidXBkYXRlIiwiY3JlYXRlIiwibGlzdCIsImRlbGV0ZSJdLCJyc2lkIjoiYWI4NmNlZmYtZTc1My00MzBkLTlmNjItM2IzNThjOTZkN2E2IiwicnNuYW1lIjoiYXJlYSJ9LHsic2NvcGVzIjpbInJlYWQiLCJ1cGRhdGUiLCJjcmVhdGUiLCJsaXN0IiwiZGVsZXRlIl0sInJzaWQiOiJhNzg2ZWUxNy03Mjg0LTRhY2EtODY4Ny1kNWQ4N2Q2NWNmZTYiLCJyc25hbWUiOiJ1bml0In0seyJzY29wZXMiOlsicmVhZCIsInVwZGF0ZSIsImNyZWF0ZSIsImxpc3QiLCJkZWxldGUiXSwicnNpZCI6IjkyMzg0YWMxLTBkYjMtNGU5Yy1hNWVjLTFhNWNkODJlZjJjYyIsInJzbmFtZSI6ImFzc2V0dHlwZSJ9LHsic2NvcGVzIjpbInJlYWQiLCJ1cGRhdGUiLCJjcmVhdGUiLCJsaXN0IiwiZGVsZXRlIl0sInJzaWQiOiIyOGU3NjI3Ni1hZGIwLTRkMzEtYjE3NC02NGVhYWNiZmU5MjUiLCJyc25hbWUiOiJhc3NldCJ9XX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImY3YTQ2NGY1LTA3ZGItNDE3Mi1hZjI5LTU1MWIyZGZlMmIwMSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoidGVzdCIsImdpdmVuX25hbWUiOiIiLCJmYW1pbHlfbmFtZSI6IiJ9.jDQdbx8N0mufxfwDGxWYH7njrwrvfMQH9pFoWuwJEM0FvkPXavwP14SxUQt1uHb8slomhiEMe2YhMXeSGtPBuJmpGZNcPy-eKCFPvB5t3fJRqPWkUD5CgX-DZMe7CkNrDo4VxfnA7px0vJ18w-lcvXcZDx1OzInxce_g2RJEX5AuVeSjvYJRkUqFpmA3E0PDA97MNT18ZGp8vuRuh4f_hdFKkV1ObWxc6vsbZGoTEViA1RHLfdWsuUZnGHSHXd36c1HjsxfyDu7KHaOGxyxiPyPnXMQDxIlIA3XETxzedcjEzoWYHOf0iRivmE4NaVN0dnFbLWlHWyj1-TcRfxRT_Q"
-		}
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{bearer_token}}",
+				"type": "string"
+			}
+		]
 	},
 	"event": [
 		{
