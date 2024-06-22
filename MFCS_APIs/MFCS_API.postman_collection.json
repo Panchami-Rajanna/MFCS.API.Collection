@@ -53,12 +53,12 @@
 								},
 								{
 									"key": "username",
-									"value": "test",
+									"value": "{{username}}",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "test",
+									"value": "{{password}}",
 									"type": "text"
 								},
 								{
@@ -69,18 +69,13 @@
 							]
 						},
 						"url": {
-							"raw": "http://10.157.121.99:8080/realms/mfcs-app/protocol/openid-connect/token",
-							"protocol": "http",
+							"raw": "{{tokenURL}}/realms/{{env}}/protocol/openid-connect/token",
 							"host": [
-								"10",
-								"157",
-								"121",
-								"99"
+								"{{tokenURL}}"
 							],
-							"port": "8080",
 							"path": [
 								"realms",
-								"mfcs-app",
+								"{{env}}",
 								"protocol",
 								"openid-connect",
 								"token"
@@ -106,7 +101,7 @@
 									"    console.log(jsonData.access_token);\r",
 									"    let bearer = jsonData.access_token;\r",
 									"    console.log(bearer);\r",
-									"    pm.environment.set(\"bearer_token\", bearer);\r",
+									"    pm.environment.set(\"RPT_Token\", bearer);\r",
 									"}"
 								],
 								"type": "text/javascript",
@@ -146,24 +141,19 @@
 								},
 								{
 									"key": "audience",
-									"value": "configuration-api",
+									"value": "{{audience}}",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://10.157.121.99:8080/realms/mfcs-app/protocol/openid-connect/token",
-							"protocol": "http",
+							"raw": "{{tokenURL}}/realms/{{env}}/protocol/openid-connect/token",
 							"host": [
-								"10",
-								"157",
-								"121",
-								"99"
+								"{{tokenURL}}"
 							],
-							"port": "8080",
 							"path": [
 								"realms",
-								"mfcs-app",
+								"{{env}}",
 								"protocol",
 								"openid-connect",
 								"token"
@@ -3937,7 +3927,11 @@
 								"exec": [
 									"// Generate a random first name\r",
 									"var firstName = Math.random().toString(36).substring(7);\r",
-									"pm.environment.set(\"AssetTypeName\", firstName);"
+									"pm.environment.set(\"AssetTypeName\", firstName);\r",
+									"\r",
+									"setTimeout(function() {\r",
+									"    console.log(\"Delay before request\");\r",
+									"}, 2000); // Delay of 2 seconds"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -4009,7 +4003,7 @@
 							"formdata": [
 								{
 									"key": "Name",
-									"value": "Test_asset-1",
+									"value": "Test_asset-2",
 									"type": "text"
 								},
 								{
@@ -4025,12 +4019,12 @@
 								{
 									"key": "AssetIconFile",
 									"type": "file",
-									"src": "/C:/Users/47700281/Documents/Panchami/wallpapers/solar system.jpg"
+									"src": "solar system.jpg"
 								},
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "parameters.json"
 								},
 								{
 									"key": "Parameters",
@@ -4061,7 +4055,11 @@
 								"exec": [
 									"// Generate a random first name\r",
 									"var firstName = Math.random().toString(36).substring(7);\r",
-									"pm.environment.set(\"AssetTypeName\", firstName);"
+									"pm.environment.set(\"AssetTypeName\", firstName);\r",
+									"\r",
+									"setTimeout(function() {\r",
+									"    console.log(\"Delay before request\");\r",
+									"}, 2000); // Delay of 2 seconds"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -4100,7 +4098,7 @@
 							"formdata": [
 								{
 									"key": "Name",
-									"value": "Test_asset-1",
+									"value": "Test_asset-2",
 									"type": "text"
 								},
 								{
@@ -4121,7 +4119,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -4152,7 +4150,11 @@
 								"exec": [
 									"// Generate a random first name\r",
 									"// var firstName = Math.random().toString(36).substring(7);\r",
-									"// pm.environment.set(\"AssetTypeName\", firstName);"
+									"// pm.environment.set(\"AssetTypeName\", firstName);\r",
+									"\r",
+									"setTimeout(function() {\r",
+									"    console.log(\"Delay before request\");\r",
+									"}, 2000); // Delay of 2 seconds"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -4245,7 +4247,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -4338,7 +4340,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -4431,7 +4433,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -4524,7 +4526,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -4617,7 +4619,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -4710,7 +4712,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -4854,10 +4856,10 @@
 									"});\r",
 									"\r",
 									"let jsonData = pm.response.json();\r",
-									" \r",
+									"\r",
 									"pm.test(\"check the status title\", function(){\r",
 									"    pm.expect(jsonData.title).to.be.eql(\"Bad Request\")\r",
-									"});\r",
+									"})\r",
 									""
 								],
 								"type": "text/javascript",
@@ -4981,6 +4983,18 @@
 								"type": "text/javascript",
 								"packages": {}
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"setTimeout(function() {\r",
+									"    console.log(\"Delay before request\");\r",
+									"}, 2000); // Delay of 2 seconds"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
 						}
 					],
 					"request": {
@@ -5008,7 +5022,11 @@
 								"exec": [
 									"// Generate a random first name\r",
 									"var firstName = Math.random().toString(36).substring(7);\r",
-									"pm.environment.set(\"AssetTypeName\", firstName);"
+									"pm.environment.set(\"AssetTypeName\", firstName);\r",
+									"\r",
+									"setTimeout(function() {\r",
+									"    console.log(\"Delay before request\");\r",
+									"}, 2000); // Delay of 2 seconds"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -5058,12 +5076,12 @@
 								{
 									"key": "AssetIconFile",
 									"type": "file",
-									"src": "/C:/Users/47700281/Desktop/MFCS/RunsResults.docx"
+									"src": "postman-cloud:///1ef2c625-945a-4b90-8790-b2f71dc66bb0"
 								},
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "/C:/Users/47700281/Downloads/parameters.json"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -5228,6 +5246,18 @@
 								"type": "text/javascript",
 								"packages": {}
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"setTimeout(function() {\r",
+									"    console.log(\"Delay before request\");\r",
+									"}, 2000); // Delay of 2 seconds"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
 						}
 					],
 					"request": {
@@ -5271,7 +5301,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"verify the value of name\", function(){\r",
-									"    pm.expect(jsonData.name).to.eql(\"Asset-Type-Update\")\r",
+									"    pm.expect(jsonData.name).to.eql(\"Asset-Type-1\")\r",
 									"})\r",
 									"\r",
 									"pm.test(\"Verify if Description is available\", function(){\r",
@@ -5320,7 +5350,11 @@
 							"script": {
 								"exec": [
 									"// var firstName = Math.random().toString(36).substring(7);\r",
-									"// pm.environment.set(\"UpdatedName\", firstName);"
+									"// pm.environment.set(\"UpdatedName\", firstName);\r",
+									"\r",
+									"setTimeout(function() {\r",
+									"    console.log(\"Delay before request\");\r",
+									"}, 2000); // Delay of 2 seconds"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -5335,7 +5369,7 @@
 							"formdata": [
 								{
 									"key": "Name",
-									"value": "Asset-Type-Update",
+									"value": "Asset-Type-1",
 									"type": "text"
 								},
 								{
@@ -5351,12 +5385,12 @@
 								{
 									"key": "AssetIconFile",
 									"type": "file",
-									"src": "/C:/Users/47700281/Desktop/MFCS/AssetIcon1.png"
+									"src": "postman-cloud:///1ef2f96b-9c24-4050-a338-0528ffe5506c"
 								},
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -5403,7 +5437,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"verify the value of name\", function(){\r",
-									"    pm.expect(jsonData.name).to.eql(\"Asset-Type-Update\")\r",
+									"    pm.expect(jsonData.name).to.eql(\"Asset-Type-1\")\r",
 									"})\r",
 									"\r",
 									"pm.test(\"Verify if Description is available\", function(){\r",
@@ -5438,6 +5472,18 @@
 								"type": "text/javascript",
 								"packages": {}
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"setTimeout(function() {\r",
+									"    console.log(\"Delay before request\");\r",
+									"}, 2000); // Delay of 2 seconds"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
 						}
 					],
 					"request": {
@@ -5448,7 +5494,7 @@
 							"formdata": [
 								{
 									"key": "Name",
-									"value": "Asset-Type-Update",
+									"value": "Asset-Type-1",
 									"type": "text"
 								},
 								{
@@ -5469,7 +5515,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -5514,6 +5560,18 @@
 								"type": "text/javascript",
 								"packages": {}
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"setTimeout(function() {\r",
+									"    console.log(\"Delay before request\");\r",
+									"}, 2000); // Delay of 2 seconds"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
 						}
 					],
 					"request": {
@@ -5524,7 +5582,7 @@
 							"formdata": [
 								{
 									"key": "Name",
-									"value": "Test_asset-Updated",
+									"value": "Test_asset-1",
 									"type": "text"
 								},
 								{
@@ -5545,7 +5603,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -5752,7 +5810,11 @@
 							"script": {
 								"exec": [
 									"var firstName = Math.random().toString(36).substring(7);\r",
-									"pm.environment.set(\"UpdatedName\", firstName);"
+									"pm.environment.set(\"UpdatedName\", firstName);\r",
+									"\r",
+									"setTimeout(function() {\r",
+									"    console.log(\"Delay before request\");\r",
+									"}, 2000); // Delay of 2 seconds"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -5788,7 +5850,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "/C:/Users/47700281/Downloads/parameters.json"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -6072,7 +6134,7 @@
 								{
 									"key": "ParamsFile",
 									"type": "file",
-									"src": "postman-cloud:///1ef2a5f3-f702-4ab0-a2e1-fcc045685136"
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
 								},
 								{
 									"key": "Parameters",
@@ -7539,7 +7601,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "{{bearer_token}}",
+				"value": "{{RPT_Token}}",
 				"type": "string"
 			}
 		]
