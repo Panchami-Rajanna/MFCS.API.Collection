@@ -2,9 +2,9 @@
 	"info": {
 		"_postman_id": "65cdf3be-71d6-471b-8da1-996b61c82c64",
 		"name": "MFCS_API",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "25051645",
-		"_collection_link": "https://blue-moon-84997.postman.co/workspace/MFCS_API-TESTING~482e1e9b-5fb2-41b5-bcc5-bf784d679f27/collection/25051645-65cdf3be-71d6-471b-8da1-996b61c82c64?action=share&source=collection_link&creator=25051645"
+		"_collection_link": "https://blue-moon-84997.postman.co/workspace/MFCS_API-TESTING~482e1e9b-5fb2-41b5-bcc5-bf784d679f27/collection/25051645-65cdf3be-71d6-471b-8da1-996b61c82c64?source=collection_link"
 	},
 	"item": [
 		{
@@ -68,24 +68,12 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{tokenURL}}/realms/{{env}}/protocol/openid-connect/token",
-							"host": [
-								"{{tokenURL}}"
-							],
-							"path": [
-								"realms",
-								"{{env}}",
-								"protocol",
-								"openid-connect",
-								"token"
-							]
-						}
+						"url": "{{tokenURL}}/realms/{{env}}/protocol/openid-connect/token"
 					},
 					"response": []
 				},
 				{
-					"name": "Bearer_Token",
+					"name": "RPT_Token",
 					"event": [
 						{
 							"listen": "test",
@@ -112,13 +100,9 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{Access_Token}}",
-									"type": "string"
-								}
-							]
+							"bearer": {
+								"token": "{{Access_Token}}"
+							}
 						},
 						"method": "POST",
 						"header": [
@@ -146,19 +130,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{tokenURL}}/realms/{{env}}/protocol/openid-connect/token",
-							"host": [
-								"{{tokenURL}}"
-							],
-							"path": [
-								"realms",
-								"{{env}}",
-								"protocol",
-								"openid-connect",
-								"token"
-							]
-						}
+						"url": "{{tokenURL}}/realms/{{env}}/protocol/openid-connect/token"
 					},
 					"response": []
 				}
@@ -234,16 +206,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -301,16 +264,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -384,16 +338,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -442,16 +387,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -500,16 +436,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -560,16 +487,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -609,16 +527,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -658,16 +567,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -707,17 +607,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Site/{{siteId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"{{siteId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/{{siteId}}"
 					},
 					"response": []
 				},
@@ -747,17 +637,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Site/38033268-fa1d-47c8-a557-a9504462dd9",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"38033268-fa1d-47c8-a557-a9504462dd9"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/38033268-fa1d-47c8-a557-a9504462dd9"
 					},
 					"response": []
 				},
@@ -799,17 +679,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Site/38033268-fa1d-47c8-a557-a9504462dd92",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"38033268-fa1d-47c8-a557-a9504462dd92"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/38033268-fa1d-47c8-a557-a9504462dd92"
 					},
 					"response": []
 				},
@@ -862,17 +732,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Site/{{siteId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"{{siteId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/{{siteId}}"
 					},
 					"response": []
 				},
@@ -912,17 +772,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Site/af7cce72-c32d-4798-828c-f594525a771",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"af7cce72-c32d-4798-828c-f594525a771"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/af7cce72-c32d-4798-828c-f594525a771"
 					},
 					"response": []
 				},
@@ -975,17 +825,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Site/{{siteId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"{{siteId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/{{siteId}}"
 					},
 					"response": []
 				},
@@ -1025,17 +865,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Site/{{siteId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"{{siteId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/{{siteId}}"
 					},
 					"response": []
 				},
@@ -1064,17 +894,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Site/{{siteId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"{{siteId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/{{siteId}}"
 					},
 					"response": []
 				},
@@ -1114,17 +934,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Site/af7cce72-c32d-4798-828c-f594525a7715",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"af7cce72-c32d-4798-828c-f594525a7715"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/af7cce72-c32d-4798-828c-f594525a7715"
 					},
 					"response": []
 				},
@@ -1153,17 +963,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Site/{{siteId1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"{{siteId1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/{{siteId1}}"
 					},
 					"response": []
 				},
@@ -1193,17 +993,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Site/70102551-aa52-4378-9429-8731fb9e179",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"70102551-aa52-4378-9429-8731fb9e179"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/70102551-aa52-4378-9429-8731fb9e179"
 					},
 					"response": []
 				},
@@ -1242,17 +1032,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Site/{{siteId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"{{siteId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/{{siteId}}"
 					},
 					"response": []
 				}
@@ -1310,16 +1090,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -1401,16 +1172,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -1482,16 +1244,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -1540,16 +1293,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -1598,16 +1342,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -1656,16 +1391,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -1735,16 +1461,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -1808,16 +1525,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -1871,16 +1579,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -1930,16 +1629,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -1979,16 +1669,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -2049,16 +1730,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -2118,17 +1790,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area/{{AreaId1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"{{AreaId1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/{{AreaId1}}"
 					},
 					"response": []
 				},
@@ -2164,17 +1826,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Area/bdef4ac4-651e-47e9-92f4-7fb2c3a98f1",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"bdef4ac4-651e-47e9-92f4-7fb2c3a98f1"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/bdef4ac4-651e-47e9-92f4-7fb2c3a98f1"
 					},
 					"response": []
 				},
@@ -2204,17 +1856,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Area/38033268-fa1d-47c8-a557-a9504462dd92",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"38033268-fa1d-47c8-a557-a9504462dd92"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/38033268-fa1d-47c8-a557-a9504462dd92"
 					},
 					"response": []
 				},
@@ -2265,17 +1907,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area/{{AreaId1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"{{AreaId1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/{{AreaId1}}"
 					},
 					"response": []
 				},
@@ -2326,17 +1958,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area/{{AreaId1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"{{AreaId1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/{{AreaId1}}"
 					},
 					"response": []
 				},
@@ -2374,17 +1996,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area/f5016185-176a-4ef9-ab4a-6d1bc742a75a",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"f5016185-176a-4ef9-ab4a-6d1bc742a75a"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/f5016185-176a-4ef9-ab4a-6d1bc742a75a"
 					},
 					"response": []
 				},
@@ -2423,17 +2035,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area/{{site_Id}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"{{site_Id}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/{{site_Id}}"
 					},
 					"response": []
 				},
@@ -2462,17 +2064,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Area/{{AreaId1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"{{AreaId1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/{{AreaId1}}"
 					},
 					"response": []
 				},
@@ -2501,17 +2093,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Area/{{AreaId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"{{AreaId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/{{AreaId}}"
 					},
 					"response": []
 				},
@@ -2541,17 +2123,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Area/70102551-aa52-4378-9429-8731fb9e179",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"70102551-aa52-4378-9429-8731fb9e179"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/70102551-aa52-4378-9429-8731fb9e179"
 					},
 					"response": []
 				}
@@ -2612,16 +2184,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -2672,16 +2235,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -2759,16 +2313,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit"
 					},
 					"response": []
 				},
@@ -2862,16 +2407,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit"
 					},
 					"response": []
 				},
@@ -2910,16 +2446,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit"
 					},
 					"response": []
 				},
@@ -2958,16 +2485,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit"
 					},
 					"response": []
 				},
@@ -3021,16 +2539,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit"
 					},
 					"response": []
 				},
@@ -3087,16 +2596,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit"
 					},
 					"response": []
 				},
@@ -3136,16 +2636,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -3185,16 +2676,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -3255,16 +2737,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit"
 					},
 					"response": []
 				},
@@ -3313,17 +2786,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"{{unitId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/{{unitId}}"
 					},
 					"response": []
 				},
@@ -3353,17 +2816,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/c6ab95d1-e488-41ec-9816-0ec16b2970f",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"c6ab95d1-e488-41ec-9816-0ec16b2970f"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/c6ab95d1-e488-41ec-9816-0ec16b2970f"
 					},
 					"response": []
 				},
@@ -3393,17 +2846,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/c6ab95d1-e488-41ec-9816-0ec16b2970d4",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"c6ab95d1-e488-41ec-9816-0ec16b2970d4"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/c6ab95d1-e488-41ec-9816-0ec16b2970d4"
 					},
 					"response": []
 				},
@@ -3453,17 +2896,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"{{unitId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/{{unitId}}"
 					},
 					"response": []
 				},
@@ -3503,17 +2936,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/aca7c92b-d0ad-4f4a-84ee-ace433f756",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"aca7c92b-d0ad-4f4a-84ee-ace433f756"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/aca7c92b-d0ad-4f4a-84ee-ace433f756"
 					},
 					"response": []
 				},
@@ -3563,17 +2986,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"{{unitId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/{{unitId}}"
 					},
 					"response": []
 				},
@@ -3612,17 +3025,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"{{unitId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/{{unitId}}"
 					},
 					"response": []
 				},
@@ -3651,17 +3054,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"{{unitId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/{{unitId}}"
 					},
 					"response": []
 				},
@@ -3699,17 +3092,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"{{unitId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/{{unitId}}"
 					},
 					"response": []
 				},
@@ -3738,17 +3121,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/{{unitId1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"{{unitId1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/{{unitId1}}"
 					},
 					"response": []
 				},
@@ -3778,17 +3151,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/70102551-aa52-4378-9429-8731fb9e179",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"70102551-aa52-4378-9429-8731fb9e179"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/70102551-aa52-4378-9429-8731fb9e179"
 					},
 					"response": []
 				},
@@ -3827,17 +3190,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/{{unitId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"{{unitId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/{{unitId}}"
 					},
 					"response": []
 				},
@@ -3860,17 +3213,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Area/{{areaId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"{{areaId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/{{areaId}}"
 					},
 					"response": []
 				},
@@ -3899,17 +3242,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Site/{{siteId1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"{{siteId1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Site/{{siteId1}}"
 					},
 					"response": []
 				}
@@ -4003,7 +3336,7 @@
 							"formdata": [
 								{
 									"key": "Name",
-									"value": "Test_asset-2",
+									"value": "Test_asset-21",
 									"type": "text"
 								},
 								{
@@ -4033,16 +3366,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -4128,16 +3452,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -4256,16 +3571,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -4349,16 +3655,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -4442,16 +3739,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -4535,16 +3823,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -4628,16 +3907,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -4721,16 +3991,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -4759,7 +4020,6 @@
 									"\r",
 									"let jsonData = pm.response.json();\r",
 									"let errormessage = jsonData.errors.Name[0]\r",
-									"let errormessage1 = jsonData.errors.ParamsFile[0]\r",
 									"\r",
 									"pm.test(\"Verify error is available\", function(){\r",
 									"    pm.expect(jsonData).to.have.property('errors');\r",
@@ -4771,9 +4031,7 @@
 									"    pm.expect(errormessage).to.eql(\"The Name field is required.\")\r",
 									"})\r",
 									"\r",
-									"pm.test(\"erify the ParamsFile error message\", function(){\r",
-									"    pm.expect(errormessage1).to.eql(\"The ParamsFile field is required.\")\r",
-									"})\r",
+									"\r",
 									""
 								],
 								"type": "text/javascript",
@@ -4819,16 +4077,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -4905,16 +4154,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -5000,16 +4240,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -5090,16 +4321,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -5159,17 +4381,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"{{AssetTypeID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID}}"
 					},
 					"response": []
 				},
@@ -5205,17 +4417,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/c47434ae-1a9b-4711-97cb-ff78362f71a",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"c47434ae-1a9b-4711-97cb-ff78362f71a"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/c47434ae-1a9b-4711-97cb-ff78362f71a"
 					},
 					"response": []
 				},
@@ -5263,17 +4465,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/c48434ae-1a9b-4711-97cb-ff78362f71a1",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"c48434ae-1a9b-4711-97cb-ff78362f71a1"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/c48434ae-1a9b-4711-97cb-ff78362f71a1"
 					},
 					"response": []
 				},
@@ -5399,17 +4591,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"{{AssetTypeID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID}}"
 					},
 					"response": []
 				},
@@ -5524,17 +4706,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"{{AssetTypeID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID}}"
 					},
 					"response": []
 				},
@@ -5612,17 +4784,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/33e5414b-593c-481f-be41-94cf4d4253d",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"33e5414b-593c-481f-be41-94cf4d4253d"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/33e5414b-593c-481f-be41-94cf4d4253d"
 					},
 					"response": []
 				},
@@ -5651,17 +4813,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"{{AssetTypeID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID}}"
 					},
 					"response": []
 				},
@@ -5690,17 +4842,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"{{AssetTypeID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID}}"
 					},
 					"response": []
 				},
@@ -5731,17 +4873,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/33e5414b-593c-481f-be41-94cf4d5253f",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"33e5414b-593c-481f-be41-94cf4d5253f"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/33e5414b-593c-481f-be41-94cf4d5253f"
 					},
 					"response": []
 				},
@@ -5770,17 +4902,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"{{AssetTypeID1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID1}}"
 					},
 					"response": []
 				},
@@ -5859,17 +4981,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/{{NonExistingID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"{{NonExistingID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/{{NonExistingID}}"
 					},
 					"response": []
 				}
@@ -5930,16 +5042,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/SIte",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"SIte"
-							]
-						}
+						"url": "{{baseURL}}/api/SIte"
 					},
 					"response": []
 				},
@@ -5990,16 +5093,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Area",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area"
-							]
-						}
+						"url": "{{baseURL}}/api/Area"
 					},
 					"response": []
 				},
@@ -6054,16 +5148,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Unit",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit"
 					},
 					"response": []
 				},
@@ -6143,16 +5228,7 @@
 								}
 							]
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType"
 					},
 					"response": []
 				},
@@ -6191,9 +5267,6 @@
 									"    pm.expect(jsonData.name).not.to.be.null;\r",
 									"});\r",
 									"\r",
-									"pm.test(\"verify the value of name\", function(){\r",
-									"    pm.expect(jsonData.name).to.eql(\"Test_asset-1\")\r",
-									"})\r",
 									"\r",
 									"pm.test(\"Verify if description is available\", function(){\r",
 									"    pm.expect(jsonData).to.have.property('description');\r",
@@ -6240,23 +5313,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Test_asset-1\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset"
 					},
 					"response": []
 				},
@@ -6267,9 +5331,9 @@
 							"listen": "prerequest",
 							"script": {
 								"exec": [
-									"// Generate a random first name\r",
-									"var firstName = Math.random().toString(36).substring(7);\r",
-									"pm.environment.set(\"AssetName\", firstName);"
+									"// // Generate a random first name\r",
+									"// var firstName = Math.random().toString(36).substring(7);\r",
+									"// pm.environment.set(\"AssetName\", firstName);"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -6301,23 +5365,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Test_asset-1\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset"
 					},
 					"response": []
 				},
@@ -6363,23 +5418,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"API testing'/1/2.1\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"API testing'/1/2.1\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset"
 					},
 					"response": []
 				},
@@ -6425,23 +5471,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"qwertyuioplkjhgfdsazxcvbnm1234567890---\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"qwertyuioplkjhgfdsazxcvbnm1234567890---\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset"
 					},
 					"response": []
 				},
@@ -6486,23 +5523,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"M7hYZHpHRN4TZ3ajCbctQWa1Hbq426k22jE26dhYuDaTHF7R04Vr45A5E6cz67SqXH3p9HZeuKNniF8XrrAn7HQF8fLMw77cghN7UxYdFvnZcDDa8mHV86e4j1wPR1zmyyrzmZfDXFrygaVPdb9F7btZkLqY77YCa0KhCzAMu7EqVJp3iVV8kUBQa2Wvq8KVP8Bw1niRThPPKLGrMbgGjvf8igLkycmuQuNyXfY2jWjzBBqXKpJar0hBWeDC2GfNZG7ABSapcJECfYLjgVddyuVPvUU1JKvyeQ65Ag26y6kC4m1Wf7rtVj\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"M7hYZHpHRN4TZ3ajCbctQWa1Hbq426k22jE26dhYuDaTHF7R04Vr45A5E6cz67SqXH3p9HZeuKNniF8XrrAn7HQF8fLMw77cghN7UxYdFvnZcDDa8mHV86e4j1wPR1zmyyrzmZfDXFrygaVPdb9F7btZkLqY77YCa0KhCzAMu7EqVJp3iVV8kUBQa2Wvq8KVP8Bw1niRThPPKLGrMbgGjvf8igLkycmuQuNyXfY2jWjzBBqXKpJar0hBWeDC2GfNZG7ABSapcJECfYLjgVddyuVPvUU1JKvyeQ65Ag26y6kC4m1Wf7rtVj\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset"
 					},
 					"response": []
 				},
@@ -6545,23 +5573,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"Testing\",\r\n  \"unitId\": \"8b72c7c7-4b29-49c3-a05c-fa3b7147de88\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"Testing\",\r\n  \"unitId\": \"8b72c7c7-4b29-49c3-a05c-fa3b7147de88\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset"
 					},
 					"response": []
 				},
@@ -6604,23 +5623,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"Testing\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"8b72c7c7-4b29-49c3-a05c-fa3b7147de88\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"Testing\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"8b72c7c7-4b29-49c3-a05c-fa3b7147de88\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset"
 					},
 					"response": []
 				},
@@ -6704,23 +5714,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset"
 					},
 					"response": []
 				},
@@ -6765,23 +5766,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"\",\r\n  \"description\": \"API Testing\",\r\n  \"unitId\": \"\",\r\n  \"assetTypeId\": \"\"\r\n}",
+							"raw": "{\r\n  \"name\": \"\",\r\n  \"description\": \"API Testing\",\r\n  \"unitId\": \"\",\r\n  \"assetTypeId\": \"\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset"
 					},
 					"response": []
 				},
@@ -6855,16 +5847,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Asset",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset"
 					},
 					"response": []
 				},
@@ -6924,17 +5907,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"{{assetID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/{{assetID}}"
 					},
 					"response": []
 				},
@@ -6964,17 +5937,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/59492112-00ca-411f-aed0-de355722a4e",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"59492112-00ca-411f-aed0-de355722a4e"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/59492112-00ca-411f-aed0-de355722a4e"
 					},
 					"response": []
 				},
@@ -7003,17 +5966,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/59492112-00ca-411f-aed0-de355722a3e7",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"59492112-00ca-411f-aed0-de355722a3e7"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/59492112-00ca-411f-aed0-de355722a3e7"
 					},
 					"response": []
 				},
@@ -7063,17 +6016,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"{{assetID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/{{assetID}}"
 					},
 					"response": []
 				},
@@ -7123,17 +6066,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"{{assetID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/{{assetID}}"
 					},
 					"response": []
 				},
@@ -7173,17 +6106,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"{{assetID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/{{assetID}}"
 					},
 					"response": []
 				},
@@ -7223,17 +6146,987 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/39a6401b-1ffd-4f5a-a7aa-44539d8584b",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"39a6401b-1ffd-4f5a-a7aa-44539d8584b"
-							]
+						"url": "{{baseURL}}/api/Asset/39a6401b-1ffd-4f5a-a7aa-44539d8584b"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"// Ensure the response is an array and not empty\r",
+									"pm.test(\"Response is a non-empty array\", function () {\r",
+									"    pm.expect(jsonData).to.be.an('array').that.is.not.empty;\r",
+									"});\r",
+									"\r",
+									"// Verify required fields for the first item in the array\r",
+									"let firstItem = jsonData[0];\r",
+									"\r",
+									"pm.test(\"Verify ID is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('id');\r",
+									"    pm.expect(firstItem.id).not.to.be.null;\r",
+									"    pm.expect(firstItem.id).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify name is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('name');\r",
+									"    pm.expect(firstItem.name).not.to.be.null;\r",
+									"    pm.expect(firstItem.name).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify description is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('description');\r",
+									"    pm.expect(firstItem.description).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unitId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unitId');\r",
+									"    pm.expect(firstItem.unitId).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unit is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unit');\r",
+									"    pm.expect(firstItem.unit).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify area is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('area');\r",
+									"    pm.expect(firstItem.area).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify site is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('site');\r",
+									"    pm.expect(firstItem.site).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetIcon is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetIcon');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeId');\r",
+									"    pm.expect(firstItem.assetTypeId).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeParams is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeParams');\r",
+									"    pm.expect(firstItem.assetTypeParams).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetType');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('parameters');\r",
+									"    pm.expect(firstItem.parameters).not.to.be.null\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
 						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n   \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset without area field +e",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"// Ensure the response is an array and not empty\r",
+									"pm.test(\"Response is a non-empty array\", function () {\r",
+									"    pm.expect(jsonData).to.be.an('array').that.is.not.empty;\r",
+									"});\r",
+									"\r",
+									"// Verify required fields for the first item in the array\r",
+									"let firstItem = jsonData[0];\r",
+									"\r",
+									"pm.test(\"Verify ID is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('id');\r",
+									"    pm.expect(firstItem.id).not.to.be.null;\r",
+									"    pm.expect(firstItem.id).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify name is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('name');\r",
+									"    pm.expect(firstItem.name).not.to.be.null;\r",
+									"    pm.expect(firstItem.name).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify description is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('description');\r",
+									"    pm.expect(firstItem.description).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unitId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unitId');\r",
+									"    pm.expect(firstItem.unitId).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unit is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unit');\r",
+									"    pm.expect(firstItem.unit).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify area is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('area');\r",
+									"    pm.expect(firstItem.area).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify site is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('site');\r",
+									"    pm.expect(firstItem.site).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetIcon is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetIcon');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeId');\r",
+									"    pm.expect(firstItem.assetTypeId).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeParams is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeParams');\r",
+									"    pm.expect(firstItem.assetTypeParams).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetType');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('parameters');\r",
+									"    pm.expect(firstItem.parameters).not.to.be.null\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset without unit ID field +ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"// Ensure the response is an array and not empty\r",
+									"pm.test(\"Response is a non-empty array\", function () {\r",
+									"    pm.expect(jsonData).to.be.an('array').that.is.not.empty;\r",
+									"});\r",
+									"\r",
+									"// Verify required fields for the first item in the array\r",
+									"let firstItem = jsonData[0];\r",
+									"\r",
+									"pm.test(\"Verify ID is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('id');\r",
+									"    pm.expect(firstItem.id).not.to.be.null;\r",
+									"    pm.expect(firstItem.id).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify name is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('name');\r",
+									"    pm.expect(firstItem.name).not.to.be.null;\r",
+									"    pm.expect(firstItem.name).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify description is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('description');\r",
+									"    pm.expect(firstItem.description).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unitId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unitId');\r",
+									"    pm.expect(firstItem.unitId).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unit is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unit');\r",
+									"    pm.expect(firstItem.unit).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify area is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('area');\r",
+									"    pm.expect(firstItem.area).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify site is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('site');\r",
+									"    pm.expect(firstItem.site).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetIcon is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetIcon');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeId');\r",
+									"    pm.expect(firstItem.assetTypeId).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeParams is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeParams');\r",
+									"    pm.expect(firstItem.assetTypeParams).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetType');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('parameters');\r",
+									"    pm.expect(firstItem.parameters).not.to.be.null\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset without asset Type Id field +ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"// Ensure the response is an array and not empty\r",
+									"pm.test(\"Response is a non-empty array\", function () {\r",
+									"    pm.expect(jsonData).to.be.an('array').that.is.not.empty;\r",
+									"});\r",
+									"\r",
+									"// Verify required fields for the first item in the array\r",
+									"let firstItem = jsonData[0];\r",
+									"\r",
+									"pm.test(\"Verify ID is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('id');\r",
+									"    pm.expect(firstItem.id).not.to.be.null;\r",
+									"    pm.expect(firstItem.id).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify name is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('name');\r",
+									"    pm.expect(firstItem.name).not.to.be.null;\r",
+									"    pm.expect(firstItem.name).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify description is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('description');\r",
+									"    pm.expect(firstItem.description).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unitId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unitId');\r",
+									"    pm.expect(firstItem.unitId).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unit is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unit');\r",
+									"    pm.expect(firstItem.unit).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify area is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('area');\r",
+									"    pm.expect(firstItem.area).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify site is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('site');\r",
+									"    pm.expect(firstItem.site).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetIcon is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetIcon');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeId');\r",
+									"    pm.expect(firstItem.assetTypeId).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeParams is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeParams');\r",
+									"    pm.expect(firstItem.assetTypeParams).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetType');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('parameters');\r",
+									"    pm.expect(firstItem.parameters).not.to.be.null\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n   \"unitId\": \"{{unitId1}}\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset without asset ID field +ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"// Ensure the response is an array and not empty\r",
+									"pm.test(\"Response is a non-empty array\", function () {\r",
+									"    pm.expect(jsonData).to.be.an('array').that.is.not.empty;\r",
+									"});\r",
+									"\r",
+									"// Verify required fields for the first item in the array\r",
+									"let firstItem = jsonData[0];\r",
+									"\r",
+									"pm.test(\"Verify ID is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('id');\r",
+									"    pm.expect(firstItem.id).not.to.be.null;\r",
+									"    pm.expect(firstItem.id).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify name is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('name');\r",
+									"    pm.expect(firstItem.name).not.to.be.null;\r",
+									"    pm.expect(firstItem.name).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify description is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('description');\r",
+									"    pm.expect(firstItem.description).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unitId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unitId');\r",
+									"    pm.expect(firstItem.unitId).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unit is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unit');\r",
+									"    pm.expect(firstItem.unit).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify area is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('area');\r",
+									"    pm.expect(firstItem.area).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify site is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('site');\r",
+									"    pm.expect(firstItem.site).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetIcon is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetIcon');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeId');\r",
+									"    pm.expect(firstItem.assetTypeId).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeParams is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeParams');\r",
+									"    pm.expect(firstItem.assetTypeParams).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetType');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('parameters');\r",
+									"    pm.expect(firstItem.parameters).not.to.be.null\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n   \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset without area ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"let error = jsonData.errors.assetSearch[0]\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(error).to.be.eql(\"The assetSearch field is required.\")\r",
+									"})\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset without unit ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"let error = jsonData.errors.assetSearch[0]\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(error).to.be.eql(\"The assetSearch field is required.\")\r",
+									"})\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n  \"unitId\": \"\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset without asset type ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"let error = jsonData.errors.assetSearch[0]\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(error).to.be.eql(\"The assetSearch field is required.\")\r",
+									"})\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset without asset ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"let error = jsonData.errors.assetSearch[0]\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(error).to.be.eql(\"The assetSearch field is required.\")\r",
+									"})\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset invalid search Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"let error = jsonData.errors.siteId[0]\r",
+									"\r",
+									"pm.test(\"Check the error message\", function(){\r",
+									"    pm.expect(error).to.be.eql(\"The value '6e7378fa-e917-4317-882d-1b271315ac2' is not valid.\")\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/6e7378fa-e917-4317-882d-1b271315ac2"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset Non-existing area ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify the status title\", function(){\r",
+									"    pm.expect(jsonData.title).to.be.eql(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"6e313a84-0ed2-4916-b9bf-28108dd116ab\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset Non-existing unit ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify the status title\", function(){\r",
+									"    pm.expect(jsonData.title).to.be.eql(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n  \"unitId\": \"6e313a84-0ed2-4916-b9bf-28108dd116ab\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset Non-existing asset type ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify the status title\", function(){\r",
+									"    pm.expect(jsonData.title).to.be.eql(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"6e313a84-0ed2-4916-b9bf-28108dd116ab\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset Non-existing asset ID +ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"// Ensure the response is an array and not empty\r",
+									"pm.test(\"Response is a non-empty array\", function () {\r",
+									"    pm.expect(jsonData).to.be.an('array').that.is.not.empty;\r",
+									"});\r",
+									"\r",
+									"// Verify required fields for the first item in the array\r",
+									"let firstItem = jsonData[0];\r",
+									"\r",
+									"pm.test(\"Verify ID is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('id');\r",
+									"    pm.expect(firstItem.id).not.to.be.null;\r",
+									"    pm.expect(firstItem.id).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify name is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('name');\r",
+									"    pm.expect(firstItem.name).not.to.be.null;\r",
+									"    pm.expect(firstItem.name).not.to.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify description is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('description');\r",
+									"    pm.expect(firstItem.description).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unitId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unitId');\r",
+									"    pm.expect(firstItem.unitId).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify unit is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('unit');\r",
+									"    pm.expect(firstItem.unit).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify area is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('area');\r",
+									"    pm.expect(firstItem.area).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify site is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('site');\r",
+									"    pm.expect(firstItem.site).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetIcon is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetIcon');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeId is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeId');\r",
+									"    pm.expect(firstItem.assetTypeId).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetTypeParams is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetTypeParams');\r",
+									"    pm.expect(firstItem.assetTypeParams).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('assetType');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"    pm.expect(firstItem).to.have.property('parameters');\r",
+									"    pm.expect(firstItem.parameters).not.to.be.null\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"6e313a84-0ed2-4916-b9bf-28108dd116ab\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset Non-existing site ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify the status title\", function(){\r",
+									"    pm.expect(jsonData.title).to.be.eql(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"6e313a84-0ed2-4916-b9bf-28108dd116ab\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/6e313a84-0ed2-4916-b9bf-28108dd116ab"
 					},
 					"response": []
 				},
@@ -7262,17 +7155,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"{{assetID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/{{assetID}}"
 					},
 					"response": []
 				},
@@ -7302,17 +7185,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/25a5de11-df62-4215-b32d-d73eca61b23",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"25a5de11-df62-4215-b32d-d73eca61b23"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/25a5de11-df62-4215-b32d-d73eca61b23"
 					},
 					"response": []
 				},
@@ -7351,17 +7224,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/244bd97d-9361-4b7d-8b7f-9b164209fe88",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"244bd97d-9361-4b7d-8b7f-9b164209fe88"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/244bd97d-9361-4b7d-8b7f-9b164209fe88"
 					},
 					"response": []
 				},
@@ -7390,17 +7253,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/{{assetID}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"{{assetID}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/{{assetID}}"
 					},
 					"response": []
 				},
@@ -7429,17 +7282,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Asset/{{assetID1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Asset",
-								"{{assetID1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Asset/{{assetID1}}"
 					},
 					"response": []
 				},
@@ -7468,17 +7311,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/AssetType/{{AssetTypeID1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"AssetType",
-								"{{AssetTypeID1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/AssetType/{{AssetTypeID1}}"
 					},
 					"response": []
 				},
@@ -7507,17 +7340,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Unit/{{unitId1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Unit",
-								"{{unitId1}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Unit/{{unitId1}}"
 					},
 					"response": []
 				},
@@ -7540,17 +7363,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Area/{{areaId}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Area",
-								"{{areaId}}"
-							]
-						}
+						"url": "{{baseURL}}/api/Area/{{areaId}}"
 					},
 					"response": []
 				},
@@ -7579,17 +7392,45 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/api/Site/{{siteId1}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"api",
-								"Site",
-								"{{siteId1}}"
-							]
+						"url": "{{baseURL}}/api/Site/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search_Asset Non-existing ID's",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify the status title\", function(){\r",
+									"    pm.expect(jsonData.title).to.be.eql(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
 						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"areaId\": \"{{areaId}}\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"assetId\": \"{{assetID}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset/{{siteId1}}"
 					},
 					"response": []
 				}
@@ -7598,13 +7439,9 @@
 	],
 	"auth": {
 		"type": "bearer",
-		"bearer": [
-			{
-				"key": "token",
-				"value": "{{RPT_Token}}",
-				"type": "string"
-			}
-		]
+		"bearer": {
+			"token": "{{RPT_Token}}"
+		}
 	},
 	"event": [
 		{
