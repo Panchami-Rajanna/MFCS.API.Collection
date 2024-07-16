@@ -2167,11 +2167,11 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"// let jsonData = pm.response.json();\r",
+									"let jsonData = pm.response.json();\r",
 									"\r",
-									"// pm.test(\"Check if value is true\", function() {\r",
-									"//     pm.expect(jsonData).to.eql(true);\r",
-									"// });"
+									"pm.test(\"Check if value is true\", function() {\r",
+									"    pm.expect(jsonData).to.eql(true);\r",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {}
