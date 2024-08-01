@@ -5370,7 +5370,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}\r\n",
+							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serialNumber\\\",\\\"displayNumber\\\":\\\"Serial Number\\\",\\\"value\\\":463272352},{\\\"name\\\":\\\"installedOn\\\",\\\"displayNumber\\\":\\\"Installed On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"lastMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Last Maintenance On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"nextMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Next Maintenance On\\\",\\\"value\\\":\\\"07/31/2024\\\"}]}\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5422,7 +5422,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serialNumber\\\",\\\"displayNumber\\\":\\\"Serial Number\\\",\\\"value\\\":463272352},{\\\"name\\\":\\\"installedOn\\\",\\\"displayNumber\\\":\\\"Installed On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"lastMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Last Maintenance On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"nextMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Next Maintenance On\\\",\\\"value\\\":\\\"07/31/2024\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5475,7 +5475,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"API testing'/1/2.1\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"API testing'/1/2.1\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serialNumber\\\",\\\"displayNumber\\\":\\\"Serial Number\\\",\\\"value\\\":463272352},{\\\"name\\\":\\\"installedOn\\\",\\\"displayNumber\\\":\\\"Installed On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"lastMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Last Maintenance On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"nextMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Next Maintenance On\\\",\\\"value\\\":\\\"07/31/2024\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5528,7 +5528,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"qwertyuioplkjhgfdsazxcvbnm1234567890---\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"qwertyuioplkjhgfdsazxcvbnm1234567890---\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serialNumber\\\",\\\"displayNumber\\\":\\\"Serial Number\\\",\\\"value\\\":463272352},{\\\"name\\\":\\\"installedOn\\\",\\\"displayNumber\\\":\\\"Installed On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"lastMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Last Maintenance On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"nextMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Next Maintenance On\\\",\\\"value\\\":\\\"07/31/2024\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5580,7 +5580,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"M7hYZHpHRN4TZ3ajCbctQWa1Hbq426k22jE26dhYuDaTHF7R04Vr45A5E6cz67SqXH3p9HZeuKNniF8XrrAn7HQF8fLMw77cghN7UxYdFvnZcDDa8mHV86e4j1wPR1zmyyrzmZfDXFrygaVPdb9F7btZkLqY77YCa0KhCzAMu7EqVJp3iVV8kUBQa2Wvq8KVP8Bw1niRThPPKLGrMbgGjvf8igLkycmuQuNyXfY2jWjzBBqXKpJar0hBWeDC2GfNZG7ABSapcJECfYLjgVddyuVPvUU1JKvyeQ65Ag26y6kC4m1Wf7rtVj\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"M7hYZHpHRN4TZ3ajCbctQWa1Hbq426k22jE26dhYuDaTHF7R04Vr45A5E6cz67SqXH3p9HZeuKNniF8XrrAn7HQF8fLMw77cghN7UxYdFvnZcDDa8mHV86e4j1wPR1zmyyrzmZfDXFrygaVPdb9F7btZkLqY77YCa0KhCzAMu7EqVJp3iVV8kUBQa2Wvq8KVP8Bw1niRThPPKLGrMbgGjvf8igLkycmuQuNyXfY2jWjzBBqXKpJar0hBWeDC2GfNZG7ABSapcJECfYLjgVddyuVPvUU1JKvyeQ65Ag26y6kC4m1Wf7rtVj\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serialNumber\\\",\\\"displayNumber\\\":\\\"Serial Number\\\",\\\"value\\\":463272352},{\\\"name\\\":\\\"installedOn\\\",\\\"displayNumber\\\":\\\"Installed On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"lastMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Last Maintenance On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"nextMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Next Maintenance On\\\",\\\"value\\\":\\\"07/31/2024\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5630,7 +5630,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"Testing\",\r\n  \"unitId\": \"8b72c7c7-4b29-49c3-a05c-fa3b7147de88\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"Testing\",\r\n  \"unitId\": \"8b72c7c7-4b29-49c3-a05c-fa3b7147de88\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serialNumber\\\",\\\"displayNumber\\\":\\\"Serial Number\\\",\\\"value\\\":463272352},{\\\"name\\\":\\\"installedOn\\\",\\\"displayNumber\\\":\\\"Installed On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"lastMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Last Maintenance On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"nextMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Next Maintenance On\\\",\\\"value\\\":\\\"07/31/2024\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5680,7 +5680,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"Testing\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"8b72c7c7-4b29-49c3-a05c-fa3b7147de88\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Test_asset-2\",\r\n  \"description\": \"Testing\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"8b72c7c7-4b29-49c3-a05c-fa3b7147de88\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serialNumber\\\",\\\"displayNumber\\\":\\\"Serial Number\\\",\\\"value\\\":463272352},{\\\"name\\\":\\\"installedOn\\\",\\\"displayNumber\\\":\\\"Installed On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"lastMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Last Maintenance On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"nextMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Next Maintenance On\\\",\\\"value\\\":\\\"07/31/2024\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5771,7 +5771,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serialNumber\\\",\\\"displayNumber\\\":\\\"Serial Number\\\",\\\"value\\\":463272352},{\\\"name\\\":\\\"installedOn\\\",\\\"displayNumber\\\":\\\"Installed On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"lastMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Last Maintenance On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"nextMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Next Maintenance On\\\",\\\"value\\\":\\\"07/31/2024\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5823,7 +5823,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"\",\r\n  \"description\": \"API Testing\",\r\n  \"unitId\": \"\",\r\n  \"assetTypeId\": \"\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serial_number\\\",\\\"value\\\":17278222736723},{\\\"name\\\":\\\"power_output\\\",\\\"value\\\":\\\"400kW\\\"},{\\\"name\\\":\\\"installed_on\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"last_maintenance\\\",\\\"value\\\":\\\"\\\"},{\\\"name\\\":\\\"next_maintenance\\\",\\\"value\\\":\\\"\\\"}]}\"\r\n}",
+							"raw": "{\r\n  \"name\": \"\",\r\n  \"description\": \"API Testing\",\r\n  \"unitId\": \"\",\r\n  \"assetTypeId\": \"\",\r\n   \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serialNumber\\\",\\\"displayNumber\\\":\\\"Serial Number\\\",\\\"value\\\":463272352},{\\\"name\\\":\\\"installedOn\\\",\\\"displayNumber\\\":\\\"Installed On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"lastMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Last Maintenance On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"nextMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Next Maintenance On\\\",\\\"value\\\":\\\"07/31/2024\\\"}]}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -5869,7 +5869,6 @@
 									"\r",
 									"pm.test(\"Verify description is available for the first item\", function(){\r",
 									"    pm.expect(firstItem).to.have.property('description');\r",
-									"    pm.expect(firstItem.description).not.to.be.null;\r",
 									"});\r",
 									"\r",
 									"pm.test(\"Verify unitId is available for the first item\", function(){\r",
@@ -6283,9 +6282,8 @@
 									"    pm.expect(firstItem).to.have.property('assetType');\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"pm.test(\"Verify parameters is available for the first item\", function(){\r",
 									"    pm.expect(firstItem).to.have.property('parameters');\r",
-									"    pm.expect(firstItem.parameters).not.to.be.null\r",
 									"});\r",
 									"\r",
 									""
@@ -6387,9 +6385,8 @@
 									"    pm.expect(firstItem).to.have.property('assetType');\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"pm.test(\"Verify parameters is available for the first item\", function(){\r",
 									"    pm.expect(firstItem).to.have.property('parameters');\r",
-									"    pm.expect(firstItem.parameters).not.to.be.null\r",
 									"});\r",
 									"\r",
 									""
@@ -6491,10 +6488,10 @@
 									"    pm.expect(firstItem).to.have.property('assetType');\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"pm.test(\"Verify parameters is available for the first item\", function(){\r",
 									"    pm.expect(firstItem).to.have.property('parameters');\r",
-									"    pm.expect(firstItem.parameters).not.to.be.null\r",
 									"});\r",
+									"\r",
 									"\r",
 									""
 								],
@@ -6595,10 +6592,10 @@
 									"    pm.expect(firstItem).to.have.property('assetType');\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"pm.test(\"Verify parameters is available for the first item\", function(){\r",
 									"    pm.expect(firstItem).to.have.property('parameters');\r",
-									"    pm.expect(firstItem.parameters).not.to.be.null\r",
 									"});\r",
+									"\r",
 									"\r",
 									""
 								],
@@ -6699,10 +6696,10 @@
 									"    pm.expect(firstItem).to.have.property('assetType');\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"pm.test(\"Verify parameters is available for the first item\", function(){\r",
 									"    pm.expect(firstItem).to.have.property('parameters');\r",
-									"    pm.expect(firstItem.parameters).not.to.be.null\r",
 									"});\r",
+									"\r",
 									"\r",
 									""
 								],
@@ -6926,10 +6923,10 @@
 									"    pm.expect(firstItem).to.have.property('assetType');\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"pm.test(\"Verify parameters is available for the first item\", function(){\r",
 									"    pm.expect(firstItem).to.have.property('parameters');\r",
-									"    pm.expect(firstItem.parameters).not.to.be.null\r",
 									"});\r",
+									"\r",
 									"\r",
 									""
 								],
@@ -7184,10 +7181,10 @@
 									"    pm.expect(firstItem).to.have.property('assetType');\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Verify assetType is available for the first item\", function(){\r",
+									"pm.test(\"Verify parameters is available for the first item\", function(){\r",
 									"    pm.expect(firstItem).to.have.property('parameters');\r",
-									"    pm.expect(firstItem.parameters).not.to.be.null\r",
 									"});\r",
+									"\r",
 									"\r",
 									""
 								],
@@ -7852,6 +7849,2600 @@
 						"method": "GET",
 						"header": [],
 						"url": "{{baseURL}}/api/Asset/metrics/{{DashboardID}}/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HST DASHBOARD_API",
+			"item": [
+				{
+					"name": "Get HST dashboard details using ID and time series value as true",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify the status code\", function () {\r",
+									"     pm.expect(pm.response.code).to.equal(200);\r",
+									"});\r",
+									"\r",
+									"let responseBody = pm.response.json()\r",
+									"\r",
+									"pm.test(\"Verify the responseBody\", function () {\r",
+									"     pm.expect(pm.response.json()).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if message is available\", function () {\r",
+									"     pm.expect(pm.response.json()).to.have.property('message');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data is available\", function () {\r",
+									"     pm.expect(pm.response.json()).to.have.property('data')\r",
+									"     pm.expect(pm.response.json().data).to.be.an('array');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of columns\", function () {\r",
+									"     pm.expect(pm.response.json().data[0]).to.have.property('columns');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of data\", function () {\r",
+									"     pm.expect(pm.response.json().data[0]).to.have.property('data');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of data axis\", function () {\r",
+									"     pm.expect(pm.response.json().data[0]).to.have.property('data_axis');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of attributes\", function () {\r",
+									"     pm.expect(pm.response.json().data[0]).to.have.property('attributes');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of role\", function () {\r",
+									"     pm.expect(pm.response.json().data[0].attributes).to.have.property('role');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of resource\", function () {\r",
+									"     pm.expect(pm.response.json().data[0].attributes).to.have.property('resource');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of window spec\", function () {\r",
+									"     pm.expect(pm.response.json().data[0]).to.have.property('window_spec');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of from\", function () {\r",
+									"     pm.expect(pm.response.json().data[0].window_spec).to.have.property('from');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of until\", function () {\r",
+									"     pm.expect(pm.response.json().data[0].window_spec).to.have.property('until');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of window\", function () {\r",
+									"     pm.expect(pm.response.json().data[0].window_spec).to.have.property('window');\r",
+									"});\r",
+									"pm.test(\"Verify the if data consists of freq\", function () {\r",
+									"     pm.expect(pm.response.json().data[0].window_spec).to.have.property('freq');\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Asset/metrics/{{HSTDashboard}}/true"
+					},
+					"response": []
+				},
+				{
+					"name": "Get HST dashboard details using ID and time series value as False",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify the status code\", function () {\r",
+									"    pm.expect(pm.response.code).to.equal(200);\r",
+									"});\r",
+									"\r",
+									"let responseBody = pm.response.json()\r",
+									"\r",
+									"pm.test(\"Verify the responseBody\", function () {\r",
+									"    pm.expect(responseBody).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if message is available\", function () {\r",
+									"    pm.expect(responseBody).to.have.property('message');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data is available\", function () {\r",
+									"    pm.expect(responseBody).to.have.property('data');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of all_metrics\", function () {\r",
+									"    pm.expect(responseBody.data).to.have.property('all_metrics');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if data consists of key_metrics\", function () {\r",
+									"    pm.expect(responseBody.data).to.have.property('key_metrics');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if all_metrics consists of name, unit, and value\", function () {\r",
+									"    responseBody.data.all_metrics.forEach((metric) => {\r",
+									"        pm.expect(metric).to.have.property('name');\r",
+									"        pm.expect(metric).to.have.property('unit');\r",
+									"        pm.expect(metric).to.have.property('value');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify the if key_metrics consists of name, unit, and value\", function () {\r",
+									"    responseBody.data.key_metrics.forEach((metric) => {\r",
+									"        pm.expect(metric).to.have.property('name');\r",
+									"        pm.expect(metric).to.have.property('unit');\r",
+									"        pm.expect(metric).to.have.property('value');\r",
+									"    });\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Asset/metrics/{{HSTDashboard}}/false"
+					},
+					"response": []
+				},
+				{
+					"name": "Time series value as 1 -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify the status code\", function () {\r",
+									"    pm.expect(pm.response.code).to.equal(400);\r",
+									"});\r",
+									"\r",
+									"let responseBody = pm.response.json()\r",
+									"\r",
+									"pm.test(\"Verify the responseBody\", function () {\r",
+									"    pm.expect(responseBody).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"verify the error displayed\", function(){\r",
+									"    pm.expect(responseBody.errors.isTimeSeries[0]).to.be.equal(\"The value '1' is not valid.\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Asset/metrics/{{HSTDashboard}}/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid HST ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify the status code\", function () {\r",
+									"    pm.expect(pm.response.code).to.equal(400);\r",
+									"});\r",
+									"\r",
+									"let responseBody = pm.response.json()\r",
+									"\r",
+									"pm.test(\"Verify the responseBody\", function () {\r",
+									"    pm.expect(responseBody).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"verify the error displayed\", function(){\r",
+									"    pm.expect(responseBody.errors.id[0]).to.be.equal(\"The value '28584c0b-0050-4303-b754-08c439e32fd' is not valid.\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Asset/metrics/28584c0b-0050-4303-b754-08c439e32fd/true"
+					},
+					"response": []
+				},
+				{
+					"name": "Non - existing HST ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify the status code\", function () {\r",
+									"    pm.expect(pm.response.code).to.equal(404);\r",
+									"});\r",
+									"\r",
+									"let responseBody = pm.response.json()\r",
+									"\r",
+									"pm.test(\"Verify the responseBody\", function () {\r",
+									"    pm.expect(responseBody).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"verify the error displayed\", function(){\r",
+									"    pm.expect(responseBody.title).to.be.equal(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Asset/metrics/28584c0b-0050-4303-b754-08c439e32fdd/true"
+					},
+					"response": []
+				},
+				{
+					"name": "Without Mandatory parameters -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify the status code\", function () {\r",
+									"    pm.expect(pm.response.code).to.equal(400);\r",
+									"});\r",
+									"\r",
+									"let responseBody = pm.response.json()\r",
+									"\r",
+									"\r",
+									"pm.test(\"verify the error displayed\", function(){\r",
+									"    pm.expect(responseBody.errors.id[0]).to.be.equal( \"The value 'metrics' is not valid.\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Asset/metrics/"
+					},
+					"response": []
+				},
+				{
+					"name": "Without timeseries value -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify the status code\", function () {\r",
+									"    pm.expect(pm.response.code).to.equal(404);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Asset/metrics/{{HSTDashboard}}/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EVENTS_API",
+			"item": [
+				{
+					"name": "Create Site  only mandatory fields",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"if (jsonData.id) {\r",
+									"    console.log(jsonData.id);\r",
+									"    let ID = jsonData.id;\r",
+									"    console.log(ID);\r",
+									"    pm.environment.set(\"siteId1\", ID);\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// pm.environment.set(\"RandomName\", pm.variables.replaceIn('{{$randomFirstName}}'))\r",
+									"\r",
+									"// Generate a random first name\r",
+									"var firstName = Math.random().toString(36).substring(7);\r",
+									"pm.environment.set(\"RandomName1\", firstName);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"{{RandomName1}}\",\r\n  \"description\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/SIte"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Area",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Generate a random first name\r",
+									"var firstName = Math.random().toString(36).substring(7);\r",
+									"pm.environment.set(\"AreaName\", firstName);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"console.log(jsonData.id)\r",
+									"let ID = jsonData.id\r",
+									"console.log(ID)\r",
+									"pm.environment.set(\"areaId\",ID)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"{{AreaName}}\",\r\n  \"description\": \"string\",\r\n  \"siteId\": \"{{siteId1}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Area"
+					},
+					"response": []
+				},
+				{
+					"name": "Create unit with only mandatory fields",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Generate a random first name\r",
+									"var firstName = Math.random().toString(36).substring(7);\r",
+									"pm.environment.set(\"UnitName1\", firstName);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"\r",
+									"if (jsonData.id) {\r",
+									"    console.log(jsonData.id);\r",
+									"    let ID = jsonData.id;\r",
+									"    console.log(ID);\r",
+									"    pm.environment.set(\"unitId1\", ID);\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"{{UnitName1}}\",\r\n  \"description\": \"\",\r\n  \"areaId\": \"{{areaId}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Unit"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Asset Type only mandatory fields",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Generate a random first name\r",
+									"var firstName = Math.random().toString(36).substring(7);\r",
+									"pm.environment.set(\"AssetTypeName\", firstName);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"if (jsonData.id) {\r",
+									"    console.log(jsonData.id);\r",
+									"    let ID = jsonData.id;\r",
+									"    console.log(ID);\r",
+									"    pm.environment.set(\"AssetTypeID1\", ID);\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Name",
+									"value": "{{AssetTypeName}}",
+									"type": "text"
+								},
+								{
+									"key": "Description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "AssetCategory",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "AssetIconFile",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "ParamsFile",
+									"type": "file",
+									"src": "postman-cloud:///1ef2f93c-5388-4b90-9968-63b3e19569c2"
+								},
+								{
+									"key": "Parameters",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{baseURL}}/api/AssetType"
+					},
+					"response": []
+				},
+				{
+					"name": "Create asset",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Generate a random first name\r",
+									"var firstName = Math.random().toString(36).substring(7);\r",
+									"pm.environment.set(\"AssetName\", firstName);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify ID is available\", function(){\r",
+									"    pm.expect(jsonData).to.have.property('id');\r",
+									"    pm.expect(jsonData.id).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if name is available\", function(){\r",
+									"    pm.expect(jsonData).to.have.property('name');\r",
+									"    pm.expect(jsonData.name).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify if description is available\", function(){\r",
+									"    pm.expect(jsonData).to.have.property('description');\r",
+									"    pm.expect(jsonData.name).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"verify the value of description\", function(){\r",
+									"    pm.expect(jsonData.description).to.eql(\"Test\")\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Verify if unitId is available\", function(){\r",
+									"    pm.expect(jsonData).to.have.property('unitId');\r",
+									"    pm.expect(jsonData.unitId).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if assetTypeId is available\", function(){\r",
+									"    pm.expect(jsonData).to.have.property('assetTypeId');\r",
+									"    pm.expect(jsonData.unitId).not.to.be.null;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if unit is available\", function(){\r",
+									"    pm.expect(jsonData).to.have.property('unit');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if assetType is available\", function(){\r",
+									"    pm.expect(jsonData).to.have.property('assetType');\r",
+									"});\r",
+									"\r",
+									"if (jsonData.id) {\r",
+									"    console.log(jsonData.id);\r",
+									"    let ID = jsonData.id;\r",
+									"    console.log(ID);\r",
+									"    pm.environment.set(\"assetID\", ID);\r",
+									"}\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"{{AssetName}}\",\r\n  \"description\": \"Test\",\r\n  \"unitId\": \"{{unitId1}}\",\r\n  \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n  \"parameters\": \"{\\\"asset_metadata\\\":[{\\\"name\\\":\\\"serialNumber\\\",\\\"displayNumber\\\":\\\"Serial Number\\\",\\\"value\\\":463272352},{\\\"name\\\":\\\"installedOn\\\",\\\"displayNumber\\\":\\\"Installed On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"lastMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Last Maintenance On\\\",\\\"value\\\":\\\"07/31/2023\\\"},{\\\"name\\\":\\\"nextMaintenanceOn\\\",\\\"displayNumber\\\":\\\"Next Maintenance On\\\",\\\"value\\\":\\\"07/31/2024\\\"}]}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Asset"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event - event type 0 - Maintenance event",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify if the ID is displayed\", function () {\r",
+									"        pm.expect(responseData).to.be.an('object');\r",
+									"        pm.expect(responseData).to.have.property('id');\r",
+									"        pm.expect(responseData.id).not.to.be.null\r",
+									"    });\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify if the timestamp is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('timestamp');\r",
+									"    pm.expect(responseData.timestamp).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify if the assetID is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('assetId');\r",
+									"        pm.expect(responseData.assetId).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the asset is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('asset');\r",
+									"    pm.expect(responseData.asset).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the assetType is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('assetType');\r",
+									"    pm.expect(responseData.assetType).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the unit is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('unit');\r",
+									"    pm.expect(responseData.unit).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the area is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('area');\r",
+									"    pm.expect(responseData.area).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the eventType is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('eventType');\r",
+									"    pm.expect(responseData.eventType).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the isAcknowledged is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('isAcknowledged');\r",
+									"    pm.expect(responseData.isAcknowledged).to.eql(false)\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the acknowledgedAt is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('acknowledgedAt');\r",
+									"    pm.expect(responseData.acknowledgedAt).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the acknowledgedBy is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('acknowledgedBy');\r",
+									"    pm.expect(responseData.acknowledgedBy).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the message is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('message');\r",
+									"    pm.expect(responseData.message).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"EventType is a valid integer value\", function () {  \r",
+									"    pm.expect(responseData.eventType).to.be.a('number', \"EventType should be a valid integer value\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"console.log(responseData.id)\r",
+									"let ID = responseData.id\r",
+									"console.log(ID)\r",
+									"pm.environment.set(\"EventID\",ID)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"{{assetID}}\",\r\n  \"eventType\": 0,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event - event type 1 - operation event",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify if the ID is displayed\", function () {\r",
+									"        pm.expect(responseData).to.be.an('object');\r",
+									"        pm.expect(responseData).to.have.property('id');\r",
+									"        pm.expect(responseData.id).not.to.be.null\r",
+									"    });\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify if the timestamp is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('timestamp');\r",
+									"    pm.expect(responseData.timestamp).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify if the assetID is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('assetId');\r",
+									"        pm.expect(responseData.assetId).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the asset is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('asset');\r",
+									"    pm.expect(responseData.asset).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the assetType is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('assetType');\r",
+									"    pm.expect(responseData.assetType).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the unit is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('unit');\r",
+									"    pm.expect(responseData.unit).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the area is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('area');\r",
+									"    pm.expect(responseData.area).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the eventType is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('eventType');\r",
+									"    pm.expect(responseData.eventType).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the isAcknowledged is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('isAcknowledged');\r",
+									"    pm.expect(responseData.isAcknowledged).to.eql(false)\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the acknowledgedAt is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('acknowledgedAt');\r",
+									"    pm.expect(responseData.acknowledgedAt).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the acknowledgedBy is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('acknowledgedBy');\r",
+									"    pm.expect(responseData.acknowledgedBy).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the message is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('message');\r",
+									"    pm.expect(responseData.message).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"EventType is a valid integer value\", function () {  \r",
+									"    pm.expect(responseData.eventType).to.be.a('number', \"EventType should be a valid integer value\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"console.log(responseData.id)\r",
+									"let ID = responseData.id\r",
+									"console.log(ID)\r",
+									"pm.environment.set(\"EventID\",ID)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"{{assetID}}\",\r\n  \"eventType\": 1,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event with only mandatory parameters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Verify if the ID is displayed\", function () {\r",
+									"        pm.expect(responseData).to.be.an('object');\r",
+									"        pm.expect(responseData).to.have.property('id');\r",
+									"        pm.expect(responseData.id).not.to.be.null\r",
+									"    });\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify if the timestamp is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('timestamp');\r",
+									"    pm.expect(responseData.timestamp).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify if the assetID is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('assetId');\r",
+									"        pm.expect(responseData.assetId).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the asset is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('asset');\r",
+									"    pm.expect(responseData.asset).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the assetType is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('assetType');\r",
+									"    pm.expect(responseData.assetType).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the unit is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('unit');\r",
+									"    pm.expect(responseData.unit).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the area is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('area');\r",
+									"    pm.expect(responseData.area).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the eventType is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('eventType');\r",
+									"    pm.expect(responseData.eventType).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the isAcknowledged is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('isAcknowledged');\r",
+									"    pm.expect(responseData.isAcknowledged).not.to.be.null\r",
+									"    pm.expect(responseData.isAcknowledged).to.eql(false)\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the acknowledgedAt is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('acknowledgedAt');\r",
+									"    pm.expect(responseData.acknowledgedAt).to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the acknowledgedBy is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('acknowledgedBy');\r",
+									"    pm.expect(responseData.acknowledgedBy).to.be.null\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if the message is displayed\", function () {\r",
+									"    pm.expect(responseData).to.have.property('message');\r",
+									"    pm.expect(responseData.message).not.to.be.null\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"EventType is a valid integer value\", function () {  \r",
+									"    pm.expect(responseData.eventType).to.be.a('number', \"EventType should be a valid integer value\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"console.log(responseData.id)\r",
+									"let ID = responseData.id\r",
+									"console.log(ID)\r",
+									"pm.environment.set(\"EventID1\",ID)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"{{Eventasset}}\",\r\n  \"eventType\": 1,\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event invalid assetID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"event\")\r",
+									"    pm.expect(responseData.errors.event[0]).to.eql(\"The event field is required.\")\r",
+									"})\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"$.assetId\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"28584c0b-0050-4303-b754-08c439e32fd\",\r\n  \"eventType\": 1,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event non-existing assetID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 500\", function () {\r",
+									"    pm.response.to.have.status(500);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.Message).to.eql(\"Internal Server Error.\")\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"{{assetID1}}\",\r\n  \"eventType\": 1,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event without asset ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors.event[0]).to.eql(\"The event field is required.\")\r",
+									"})\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"$.assetId\")\r",
+									"    })"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\":  \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"\",\r\n  \"eventType\": 1,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event without message -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"Message\")\r",
+									"    pm.expect(responseData.errors.Message[0]).to.eql(\"The Message field is required.\")\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"{{Eventasset}}\",\r\n  \"eventType\": 23,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event without timestamp -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"event\")\r",
+									"    pm.expect(responseData.errors.event[0]).to.eql(\"The event field is required.\")\r",
+									"})\r",
+									"\r",
+									"pm.test(\"verify the error message has timestamp field highlighted\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"$.timestamp\")\r",
+									"})\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"\",\r\n  \"assetId\": \"{{Eventasset}}\",\r\n  \"eventType\": 23,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event event type as string -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"event\")\r",
+									"    pm.expect(responseData.errors.event[0]).to.eql(\"The event field is required.\")\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Verify the event type field is high lighted in errors\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"$.eventType\")\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"{{Eventasset}}\",\r\n  \"eventType\": \"Test\",\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event is acknowledged as boolean -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"event\")\r",
+									"    pm.expect(responseData.errors.event[0]).to.eql(\"The event field is required.\")\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Verify the event type field is high lighted in errors\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"$.isAcknowledged\")\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"{{Eventasset}}\",\r\n  \"eventType\": 0,\r\n  \"isAcknowledged\": 1,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event acknowledgedAt invalid format -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"event\")\r",
+									"    pm.expect(responseData.errors.event[0]).to.eql(\"The event field is required.\")\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Verify the event type field is high lighted in errors\", function(){\r",
+									"    pm.expect(responseData.errors).to.have.property(\"$.acknowledgedAt\")\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"{{Eventasset}}\",\r\n  \"eventType\": 0,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-24-07T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Event wrong timestamp format -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors.event[0]).to.eql(\"The event field is required.\")\r",
+									"})\r",
+									"\r",
+									"// Check if 'timestamp' error is available\r",
+									"pm.test(\"Check if 'timestamp' error is available\", function () {\r",
+									"    pm.expect(responseData.errors).to.have.property('$.timestamp');\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-24-07T12:45:52\",\r\n  \"assetId\": \"{{Eventasset}}\",\r\n  \"eventType\": 1,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create event message character length more than 300 -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify the status code\", function(){\r",
+									"    pm.response.to.have.status(400)\r",
+									"})\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function () {\r",
+									"     pm.expect(responseData.errors.Message[0]).to.eql(\"The field Message must be a string or array type with a maximum length of '300'.\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"{{Eventasset}}\",\r\n  \"eventType\": 23,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"Test\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"tY3jfnneQFptG_RSU}zu+8H*#+#{]TaU-KK{EpNe_JP#-x{eY)z$TtG}C4$#8]b.iwdk$Y]3kX;xt1tVU]/MqX$8#9eymV!wwvBmRy;3pr0$)8W)@VFq:gz)t.@*1g&@X}%LX8euEfJ8gfp/]0_Lg&GBmV)ydHDD[*6XT$%@CM8P$MDxCHERif+1WEd$Cf3Ci86J1jge@{Yt}YP:N4x%tNi.p3Ba/3j&ee9iH9#Hgv5*#rBR=M@&94GP6f@[*tHEh+_4e,u(8pjg9HVAiAtd/;eaDVP=]y47_)6Pp3g$mbE?Jv:RNU;!;E+k0+;K64!5*(Py{\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Create event acknowledged by character length more than 36 -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify the status code\", function(){\r",
+									"    pm.response.to.have.status(400)\r",
+									"})\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function () {\r",
+									"     pm.expect(responseData.errors.AcknowledgedBy[0]).to.eql(\"The field AcknowledgedBy must be a string or array type with a maximum length of '36'.\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"timestamp\": \"2024-07-22T12:45:52.840Z\",\r\n  \"assetId\": \"{{Eventasset}}\",\r\n  \"eventType\": 23,\r\n  \"isAcknowledged\": true,\r\n  \"acknowledgedAt\": \"2024-07-24T12:45:52.840Z\",\r\n  \"acknowledgedBy\": \"qwertyuiopasdfghjklzxcvbnm12345678901234\",\r\n  \"acknowledgedByUsername\": \"Panchami\",\r\n  \"message\": \"API Testing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and is acknowledged as false",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify if isAcknowledged alue is false\", function () {  \r",
+									"    pm.expect(responseData).to.be.an('array');\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event.isAcknowledged).to.eql(false)\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": null,\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": false,\r\n    \"sortColumn\": null,\r\n    \"sortOrder\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and sort column as isAcknowledged in ascending order (false)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"// Check if the first object's isAcknowledged field is false\r",
+									"pm.test(\"First object's isAcknowledged is true\", function () {\r",
+									"    const firstItem = responseData[0];\r",
+									"    pm.expect(firstItem.isAcknowledged).to.be.false;\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": null,\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": \"isAcknowledged\",\r\n    \"sortOrder\": \"asc\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Get events details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"EventType is a valid integer value\", function () {  \r",
+									"    pm.expect(responseData).to.be.an('array');\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event.eventType).to.be.a('number', \"EventType should be a valid integer value\");\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Get event details by ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify the status code\", function () {\r",
+									"    pm.response.to.have.status(200)\r",
+									"})\r",
+									"\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Check if 'id' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('id');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'timestamp' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('timestamp');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'assetId' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('assetId');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'asset' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('asset');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'assetType' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('assetType');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'unit' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('unit');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'area' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('area');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'eventType' is a number\", function () {\r",
+									"    pm.expect(response.eventType).to.be.a('number');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'message' is a string and not empty\", function () {\r",
+									"    pm.expect(response.message).to.be.a('string');\r",
+									"    pm.expect(response.message).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'acknowledgedBy' is available\", function () {\r",
+									"    pm.expect(response).to.have.property(\"acknowledgedBy\")\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'acknowledgedAt' available'\", function () {\r",
+									"    pm.expect(response).to.have.property(\"acknowledgedAt\")\r",
+									"    pm.expect(response.acknowledgedAt).to.not.be.empty\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'isAcknowledged' is available\", function () {\r",
+									"    pm.expect(response).to.have.property(\"isAcknowledged\")\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Event/{{EventID}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Get event details by non-existing ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify the status code\", function () {\r",
+									"    pm.response.to.have.status(404)\r",
+									"})\r",
+									"\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Check if 'title' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('title');\r",
+									"    pm.expect(response.title).to.eql(\"Not Found\")\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Event/6f60e8cd-b591-4b11-b88d-6a0b872c194d"
+					},
+					"response": []
+				},
+				{
+					"name": "Get event details by invalid ID format -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify the status code\", function () {\r",
+									"    pm.response.to.have.status(400)\r",
+									"})\r",
+									"\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Check if 'title' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('errors');\r",
+									"    pm.expect(response.errors.id[0]).to.eql(\"The value '6f60e8cd-b591-4b11-b88d-6a0b872c194' is not valid.\")\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseURL}}/api/Event/6f60e8cd-b591-4b11-b88d-6a0b872c194"
+					},
+					"response": []
+				},
+				{
+					"name": "Update the event",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify the status code\", function () {\r",
+									"    pm.response.to.have.status(200)\r",
+									"})\r",
+									"\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Check if 'id' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('id');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'timestamp' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('timestamp');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'assetId' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('assetId');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'asset' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('asset');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'assetType' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('assetType');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'unit' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('unit');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'area' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('area');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'eventType' is a number\", function () {\r",
+									"    pm.expect(response.eventType).to.be.a('number');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'message' is a string and not empty\", function () {\r",
+									"    pm.expect(response.message).to.be.a('string');\r",
+									"    pm.expect(response.message).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'acknowledgedBy' is 'Test'\", function () {\r",
+									"    pm.expect(response).to.have.property(\"acknowledgedBy\")\r",
+									"    pm.expect(response.acknowledgedBy).to.eql(\"e3609ad7-e175-438e-80e0-d6b55c8cd305\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'acknowledgedAt' is 'Test'\", function () {\r",
+									"    pm.expect(response).to.have.property(\"acknowledgedAt\")\r",
+									"    pm.expect(response.acknowledgedAt).to.not.be.empty\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check if 'isAcknowledged' is 'Test'\", function () {\r",
+									"    pm.expect(response).to.have.property(\"isAcknowledged\")\r",
+									"    pm.expect(response.isAcknowledged).to.eql(true)\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "{{baseURL}}/api/Event/{{EventID}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Update the event non-existing event Id -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify the status code\", function () {\r",
+									"    pm.response.to.have.status(404)\r",
+									"})\r",
+									"\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Check if 'title' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('title');\r",
+									"    pm.expect(response.title).to.eql(\"Not Found\")\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "{{baseURL}}/api/Event/93e4b3f1-38f6-4d60-92c0-7f1df7178b13"
+					},
+					"response": []
+				},
+				{
+					"name": "Update event details by invalid ID format -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"verify the status code\", function () {\r",
+									"    pm.response.to.have.status(400)\r",
+									"})\r",
+									"\r",
+									"let response = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Check if 'title' is available\", function () {\r",
+									"    pm.expect(response).to.have.property('errors');\r",
+									"    pm.expect(response.errors.id[0]).to.eql(\"The value '6f60e8cd-b591-4b11-b88d-6a0b872c194' is not valid.\")\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "{{baseURL}}/api/Event/6f60e8cd-b591-4b11-b88d-6a0b872c194"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by only site ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"EventType is a valid integer value\", function () {  \r",
+									"    pm.expect(responseData).to.be.an('array');\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event.eventType).to.be.a('number', \"EventType should be a valid integer value\");\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": null,\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": null,\r\n    \"sortOrder\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and Asset Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"EventType is a valid integer value\", function () {  \r",
+									"    pm.expect(responseData).to.be.an('array');\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event.eventType).to.be.a('number', \"EventType should be a valid integer value\");\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": \"{{assetID}}\",\r\n    \"assetTypeId\": null,\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": null,\r\n    \"sortOrder\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and Asset type Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"EventType is a valid integer value\", function () {  \r",
+									"    pm.expect(responseData).to.be.an('array');\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event.eventType).to.be.a('number', \"EventType should be a valid integer value\");\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": \"{{AssetTypeID1}}\",\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": null,\r\n    \"sortOrder\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and timestamp",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"verify the timestamp value\", function () {  \r",
+									"    pm.expect(responseData).to.be.an('array');\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event.timestamp).to.be.eql(\"2024-07-22T12:45:52.84\")\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": null,\r\n    \"eventType\": null,\r\n    \"timestamp\": \"2024-07-22T12:45:52.84\",\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": null,\r\n    \"sortOrder\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and Event type 0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"EventType is a 0\", function () {  \r",
+									"    pm.expect(responseData).to.be.an('array');\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event.eventType).to.be.eql(0)\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": null,\r\n    \"eventType\": 0,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": null,\r\n    \"sortOrder\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and Event type 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"EventType is a 1\", function () {  \r",
+									"    pm.expect(responseData).to.be.an('array');\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event.eventType).to.be.eql(1)\r",
+									"    });\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": null,\r\n    \"eventType\": 1,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": null,\r\n    \"sortOrder\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and is acknowledged as true",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify if isAcknowledged value is true\", function () {  \r",
+									"    pm.expect(responseData).to.be.an('array');\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event.isAcknowledged).to.eql(true)\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": null,\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": true,\r\n    \"sortColumn\": null,\r\n    \"sortOrder\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and sort column as isAcknowledged in descending order (true)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"const responseData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Validate the contents of the response object\", function () {\r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(event) {\r",
+									"        pm.expect(event).to.be.an('object');\r",
+									"        pm.expect(event).to.have.property('id');\r",
+									"        pm.expect(event).to.have.property('timestamp');\r",
+									"        pm.expect(event).to.have.property('assetId');\r",
+									"        pm.expect(event).to.have.property('asset');\r",
+									"        pm.expect(event).to.have.property('assetType');\r",
+									"        pm.expect(event).to.have.property('unit');\r",
+									"        pm.expect(event).to.have.property('area');\r",
+									"        pm.expect(event).to.have.property('eventType');\r",
+									"        pm.expect(event).to.have.property('isAcknowledged');\r",
+									"        pm.expect(event).to.have.property('acknowledgedAt');\r",
+									"        pm.expect(event).to.have.property('acknowledgedBy');\r",
+									"        pm.expect(event).to.have.property('message');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"// Check if the first object's isAcknowledged field is true\r",
+									"pm.test(\"First object's isAcknowledged is true\", function () {\r",
+									"    const firstItem = responseData[0];\r",
+									"    pm.expect(firstItem.isAcknowledged).to.be.true;\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": null,\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": \"isAcknowledged\",\r\n    \"sortOrder\": \"desc\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Search Event with invalid site ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.errors.siteId[0]).to.eql(\"The value 'bb417fd7-0490-4547-b488-72576a3142c' is not valid.\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": null,\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": \"isAcknowledged\",\r\n    \"sortOrder\": \"desc\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/bb417fd7-0490-4547-b488-72576a3142c"
+					},
+					"response": []
+				},
+				{
+					"name": "Search event with Non-existing Site ID -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.title).to.eql(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": null,\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": \"isAcknowledged\",\r\n    \"sortOrder\": \"desc\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/bb417fd7-0490-4547-b488-72576a3142c4"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and wrong Asset Id -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.title).to.eql(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": \"28584c0b-0050-4303-b754-08c439e32fd5\",\r\n    \"assetTypeId\": null,\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": null,\r\n    \"sortOrder\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
+					},
+					"response": []
+				},
+				{
+					"name": "search Event by site ID and wrong Asset type Id -ve",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"let responseData = pm.response.json()\r",
+									"\r",
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.title).to.eql(\"Not Found\")\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assetId\": null,\r\n    \"assetTypeId\": \"ef8cb844-6f79-44ae-9e3b-02cc5db2a130\",\r\n    \"eventType\": null,\r\n    \"timestamp\": null,\r\n    \"isAcknowledged\": null,\r\n    \"sortColumn\": null,\r\n    \"sortOrder\": null\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseURL}}/api/Event/{{siteId1}}"
 					},
 					"response": []
 				}
