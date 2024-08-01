@@ -10421,9 +10421,9 @@
 									"\r",
 									"let responseData = pm.response.json()\r",
 									"\r",
-									"// pm.test(\"verify the error message\", function(){\r",
-									"//     pm.expect(responseData.title).to.eql(\"Not Found\")\r",
-									"// })"
+									"pm.test(\"verify the error message\", function(){\r",
+									"    pm.expect(responseData.title).to.eql(\"Not Found\")\r",
+									"})"
 								],
 								"type": "text/javascript",
 								"packages": {}
